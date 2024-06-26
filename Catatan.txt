@@ -1,0 +1,20 @@
+--------------> Init Env <--------------
+conda create -n tf15 python tensorflow=1.15
+C:\Users\rudij\anaconda3\envs\tf15\python.exe  -m venv .venv
+
+---------------> Activate Env <---------------
+.venv\Scripts\activate
+
+--------------> Intall Library <--------------
+pip install -r requirements.txt
+
+-----------------> Run App <-----------------
+python app.py
+
+-------------> Deactivate Env <-------------
+deactivate
+
+-------------> Database Migration <-------------
+flask db migrate -m "init"
+flask db upgrade
+flask seed run

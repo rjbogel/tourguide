@@ -1,0 +1,65 @@
+{% extends "layout/landing.html" %}
+{% block inside %}
+
+<div class="screen">
+    <a class="waves-effect waves-light btn grey" id="btn-login"><i class="material-icons left">login</i>Login</a>
+    <div class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <div class="slider-content">
+                        <h2 style="color: rgb(0, 0, 0); font-family: macbeth ;"> "Smart Tour Guide" OW.GUCI</h2>
+                        <div class="logo-wrapper">
+                            <img src="{{ url_for('static', filename='img/logo.png')}}" alt="logo">
+                        </div>
+                        <p style="color: black; font-size: 200%; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; margin: 0; padding: 0;">Apa yang ingin anda cari tahu???</p>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="slider-content">
+                        <div class="image-wrapper intro">
+                            <img src="{{ url_for('static', filename='img/intro/wisata.png')}}" alt="logo">
+                        </div>
+                        <p style="color: black; font-size: 300%; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; margin: 0; padding: 0;">WISATA</p>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="slider-content">
+                        <div class="image-wrapper intro">
+                            <img src="{{ url_for('static', filename='img/intro/hotel.png')}}" alt="logo">
+                        </div>
+                        <p style="color: black; font-size: 300%; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; margin: 0; padding: 0;">HOTEL</p>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="slider-content">
+                        <div class="image-wrapper intro">
+                            <img src="{{ url_for('static', filename='img/intro/spot.png')}}" alt="logo">
+                        </div>
+                        <p style="color: black; font-size: 300%; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;margin: 0; padding: 0;">SPOT SELFIE</p>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="slider-content">
+                        <div class="image-wrapper intro">
+                            <img src="{{ url_for('static', filename='img/intro/food.png')}}" alt="logo">
+                        </div>
+                        <p style="color: black; font-size: 300%; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; margin: 0; padding: 0;">MAKANAN/OLEH-OLEH</p>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="slider-content">
+                        <h1>MULAI</h1>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Add the progress bar element -->
+        <div class="my-slider-progress">
+            <div class="my-slider-progress-bar"></div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

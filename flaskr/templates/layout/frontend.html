@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ant Colony</title>
+  <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/png">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='dt/datatables.min.css')}}" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/materialize.min.css')}}" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/jquery-ui.min.css')}}" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css')}}" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/frontend.css')}}" />
+  {% block style %}{% endblock %}
+</head>
+
+<body>
+  <div class="parent-wrapper">
+    <div class="navigator-wrapper">
+      {% block inside %}{% endblock %}
+    </div>
+    <div class="map-wrapper">
+      <a class="waves-effect waves-light green btn hide-on-med-and-up" id="btn-back"><i class="material-icons left">chevron_left</i>Kembali</a>
+      <div id="map" style="width: 100%; height: 100%"></div>
+    </div>
+    <a class="waves-effect waves-light blue btn" id="btn-login" href="{{ url_for('auth.login') }}"><i class="material-icons left">person</i>Login</a>
+  </div>
+  <script src="{{ url_for('static', filename='js/jquery-3.7.1.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/jquery-ui.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/chart.umd.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/swal.js')}}"></script>
+  <script src="{{ url_for('static', filename='dt/datatables.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/materialize.min.js')}}"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="{{ url_for('static', filename='js/Leaflet.Marker.SlideTo.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/utils/puller.js')}}"></script>
+  <script>
+    const baseUrl = "";
+    const baseOSRM = "http://router.project-osrm.org/route/v1/driving/";
+    let page = "{{ page }}";
+    const cloud = new Puller();
+  </script>
+  <script src="{{ url_for('static', filename='js/main.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/page/frontend.js')}}"></script>
+  {% block script %}{% endblock %}
+</body>
+
+</html>

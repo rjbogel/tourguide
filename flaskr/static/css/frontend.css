@@ -1,0 +1,215 @@
+.parent-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  overflow: hidden;
+}
+.navigator-wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  top: 0;
+  right: 0%;
+  color: white;
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+  transition: all ease 0.3s;
+}
+.navigator-wrapper.close {
+  right: 100%;
+}
+.map-wrapper {
+  position: relative;
+  height: 100%;
+  flex: 1;
+  background-color: white;
+  z-index: 2;
+}
+
+.nav-title {
+  position: relative;
+  text-transform: uppercase;
+  background-color: white;
+  color: var(--main-color);
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.desti-wrapper {
+  position: relative;
+  width: 100%;
+  border: 1px solid white;
+}
+
+.content-section {
+  position: relative;
+  padding: 0 1rem;
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: white;
+  border-radius: 1rem;
+  color: black;
+}
+
+.desti-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 1rem;
+  background-color: #3b8935;
+  transition: all ease 0.3s;
+}
+.desti-item:hover {
+  filter: brightness(0.9);
+}
+.desti-item:active {
+  transform: scale(0.95);
+}
+.desti-item::after {
+  font-family: "Material Icons";
+  content: "\e5cc";
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+  color: white;
+  transition: all ease 0.3s;
+}
+.desti-item.deletable::after {
+  content: "\e872";
+}
+.desti-item p {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.desti-item p:nth-of-type(1) {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.desti-item a.desti-close {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  text-decoration: none;
+  color: var(--main-color);
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 2rem;
+}
+
+.content-section-sub {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 0.25rem;
+  background-color: var(--main-color);
+  color: white;
+  transition: all ease 0.3s;
+}
+.content-section-sub.open {
+  left: 0%;
+}
+
+.wisata-picker-wrapper {
+  position: relative;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: black;
+}
+
+.wisata-picker {
+  position: relative;
+  flex: 1;
+  overflow: auto;
+}
+.wisata-item {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 0.25rem 1rem;
+  border: 1px solid gray;
+  transition: all ease 0.3s;
+}
+.wisata-item:hover {
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+}
+.wisata-item:active {
+  transform: scale(0.95);
+}
+.wisata-item p {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.wisata-item::after {
+  font-family: "Material Icons";
+  content: "\e5ca";
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+}
+.wisata-item p:nth-of-type(1) {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#btn-back {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 999999;
+}
+#btn-login {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 999999;
+}
+
+@media only screen and (min-width: 768px) {
+  .navigator-wrapper {
+    position: relative;
+    width: 30rem;
+    right: 0%;
+  }
+  .navigator-wrapper.close {
+    right: 0%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+}

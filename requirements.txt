@@ -1,0 +1,16 @@
+pandas
+nltk
+matplotlib
+scikit-learn
+python-dotenv
+flask-restplus
+Flask-SQLAlchemy
+Flask-Migrate
+Flask-Seeder
+flask_cors
+sqlalchemy-easy-softdelete
+mysqlclient
+Flask-mysql
+SQLAlchemy-serializer
+SQLAlchemy
+flask_login

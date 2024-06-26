@@ -1,0 +1,183 @@
+def download_and_decompress(url, storage_path, storage_dir):
+   import os.path
+   directory = storage_path + "/" + storage_dir
+   zip_file = directory + ".zip"
+   a_file = directory + "/cornell movie-dialogs corpus/README.txt"
+   if not os.path.isfile(a_file):
+       import urllib.request
+       import zipfile
+       urllib.request.urlretrieve(url, zip_file)
+       with zipfile.ZipFile(zip_file, "r") as zfh:
+           zfh.extractall(directory)
+   return
+
+import re
+def read_conversations(storage_path, storage_dir):
+   filename = storage_path + "/" + storage_dir + "/cornell movie-dialogs corpus/movie_conversations.txt"
+   with open(filename, "r", encoding="ISO-8859-1") as fh:
+       conversations_chunks = [line.split(" +++$+++ ") for line in fh]
+   return [re.sub('[[]']', '', el[3].strip()).split(", ") for el in conversations_chunks]
+
+def read_lines(storage_path, storage_dir):
+   filename = storage_path + "/" + storage_dir + "/cornell movie-dialogs corpus/movie_lines.txt"
+   with open(filename, "r", encoding="ISO-8859-1") as fh:
+       lines_chunks = [line.split(" +++$+++ ") for line in fh]
+   return {line[0]: line[-1].strip() for line in lines_chunks}
+
+def get_tokenized_sequencial_sentences(list_of_lines, line_text):
+   for line in list_of_lines:
+       for i in range(len(line) - 1):
+           yield (line_text[line[i]].split(" "), line_text[line[i+1]].split(" "))
+
+def retrieve_cornell_corpora(storage_path="/tmp", storage_dir="cornell_movie_dialogs_corpus"):
+   download_and_decompress("http://www.cs.cornell.edu/~cristian/data/cornell_movie_dialogs_corpus.zip",      
+                     storage_path,
+                           storage_dir)
+   conversations = read_conversations(storage_path, storage_dir)
+   lines = read_lines(storage_path, storage_dir)
+   return tuple(zip(*list(get_tokenized_sequencial_sentences(conversations, lines))))
+
+from corpora_tools import *
+from corpora_downloader import retrieve_cornell_corpora
+sen_l1, sen_l2 = retrieve_cornell_corpora()
+print("# Two consecutive sentences in a conversation")
+print("Q:", sen_l1[0])
+print("A:", sen_l2[0])
+print("# Corpora length (i.e. number of sentences)")
+print(len(sen_l1))
+assert len(sen_l1) == len(sen_l2)
+
+# Two consecutive sentences in a conversation
+Q: ['Can', 'we', 'make', 'this', 'quick?', '', 'Roxanne', 'Korrine', 'and', 'Andrew', 'Barrett', 'are', 'having', 'an', 'incredibly', 'horrendous', 'public', 'break-', 'up', 'on', 'the', 'quad.', '', 'Again.']
+A: ['Well,', 'I', 'thought', "we'd", 'start', 'with', 'pronunciation,', 'if', "that's", 'okay', 'with', 'you.']
+# Corpora length (i.e. number of sentences)
+221616
+
+clean_sen_l1 = [clean_sentence(s) for s in sen_l1]
+clean_sen_l2 = [clean_sentence(s) for s in sen_l2]
+filt_clean_sen_l1, filt_clean_sen_l2 = filter_sentence_length(clean_sen_l1, clean_sen_l2)
+print("# Filtered Corpora length (i.e. number of sentences)")
+print(len(filt_clean_sen_l1))
+assert len(filt_clean_sen_l1) == len(filt_clean_sen_l2)
+
+# Filtered Corpora length (i.e. number of sentences)
+140261
+
+dict_l1 = create_indexed_dictionary(filt_clean_sen_l1, dict_size=15000, storage_path="/tmp/l1_dict.p")
+dict_l2 = create_indexed_dictionary(filt_clean_sen_l2, dict_size=15000, storage_path="/tmp/l2_dict.p")
+idx_sentences_l1 = sentences_to_indexes(filt_clean_sen_l1, dict_l1)
+idx_sentences_l2 = sentences_to_indexes(filt_clean_sen_l2, dict_l2)
+print("# Same sentences as before, with their dictionary ID")
+print("Q:", list(zip(filt_clean_sen_l1[0], idx_sentences_l1[0])))
+print("A:", list(zip(filt_clean_sen_l2[0], idx_sentences_l2[0])))
+
+[sentences_to_indexes] Did not find 16823 words
+[sentences_to_indexes] Did not find 16649 words
+# Same sentences as before, with their dictionary ID
+Q: [('well', 68), (',', 8), ('i', 9), ('thought', 141), ('we', 23), ("'", 5), ('d', 83), ('start', 370), ('with', 46), ('pronunciation', 3), (',', 8), ('if', 78), ('that', 18), ("'", 5), ('s', 12), ('okay', 92), ('with', 46), ('you', 7), ('.', 4)]
+A: [('not', 31), ('the', 10), ('hacking', 7309), ('and', 23), ('gagging', 8761), ('and', 23), ('spitting', 6354), ('part', 437), ('.', 4), ('please', 145), ('.', 4)]
+
+data_set = prepare_sentences(idx_sentences_l1, idx_sentences_l2, max_length_l1, max_length_l2)
+print("# Prepared minibatch with paddings and extra stuff")
+print("Q:", data_set[0][0])
+print("A:", data_set[0][1])
+print("# The sentence pass from X to Y tokens")
+print("Q:", len(idx_sentences_l1[0]), "->", len(data_set[0][0]))
+print("A:", len(idx_sentences_l2[0]), "->", len(data_set[0][1]))
+
+# Prepared minibatch with paddings and extra stuff
+Q: [0, 68, 8, 9, 141, 23, 5, 83, 370, 46, 3, 8, 78, 18, 5, 12, 92, 46, 7, 4]
+A: [1, 31, 10, 7309, 23, 8761, 23, 6354, 437, 4, 145, 4, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+# The sentence pass from X to Y tokens
+Q: 19 -> 20
+A: 11 -> 22
+
+def build_dataset(use_stored_dictionary=False):
+   sen_l1, sen_l2 = retrieve_cornell_corpora()
+   clean_sen_l1 = [clean_sentence(s) for s in sen_l1][:30000] ### OTHERWISE IT DOES NOT RUN ON MY LAPTOP
+   clean_sen_l2 = [clean_sentence(s) for s in sen_l2][:30000] ### OTHERWISE IT DOES NOT RUN ON MY LAPTOP
+   filt_clean_sen_l1, filt_clean_sen_l2 = filter_sentence_length(clean_sen_l1, clean_sen_l2, max_len=10)
+   if not use_stored_dictionary:
+       dict_l1 = create_indexed_dictionary(filt_clean_sen_l1, dict_size=10000, storage_path=path_l1_dict)
+       dict_l2 = create_indexed_dictionary(filt_clean_sen_l2, dict_size=10000, storage_path=path_l2_dict)
+   else:
+       dict_l1 = pickle.load(open(path_l1_dict, "rb"))
+       dict_l2 = pickle.load(open(path_l2_dict, "rb"))
+   dict_l1_length = len(dict_l1)
+   dict_l2_length = len(dict_l2)
+   idx_sentences_l1 = sentences_to_indexes(filt_clean_sen_l1, dict_l1)
+   idx_sentences_l2 = sentences_to_indexes(filt_clean_sen_l2, dict_l2)
+   max_length_l1 = extract_max_length(idx_sentences_l1)
+   max_length_l2 = extract_max_length(idx_sentences_l2)
+   data_set = prepare_sentences(idx_sentences_l1, idx_sentences_l2, max_length_l1, max_length_l2)
+   return (filt_clean_sen_l1, filt_clean_sen_l2), 
+           data_set, 
+           (max_length_l1, max_length_l2), 
+           (dict_l1_length, dict_l2_length)
+
+[sentences_to_indexes] Did not find 0 words
+[sentences_to_indexes] Did not find 0 words
+global step 100 learning rate 1.0 step-time 7.708967611789704 perplexity 444.90090078460474
+eval: perplexity 57.442316329639176
+global step 200 learning rate 0.990234375 step-time 7.700247814655302 perplexity 48.8545568311572
+eval: perplexity 42.190180314697045
+global step 300 learning rate 0.98046875 step-time 7.69800933599472 perplexity 41.620538109894945
+eval: perplexity 31.291903031786116
+...
+...
+...
+global step 2400 learning rate 0.79833984375 step-time 7.686293318271639 perplexity 3.7086356605442767
+eval: perplexity 2.8348589631663046
+global step 2500 learning rate 0.79052734375 step-time 7.689657487869262 perplexity 3.211876894960698
+eval: perplexity 2.973809378544393
+global step 2600 learning rate 0.78271484375 step-time 7.690396382808681 perplexity 2.878854805600354
+eval: perplexity 2.563583924617356
+
+import pickle
+import sys
+import numpy as np
+import tensorflow as tf
+import data_utils
+from corpora_tools import clean_sentence, sentences_to_indexes, prepare_sentences
+from train_chatbot import get_seq2seq_model, path_l1_dict, path_l2_dict
+model_dir = "/home/abc/chat/chatbot_model"
+def prepare_sentence(sentence, dict_l1, max_length):
+   sents = [sentence.split(" ")]
+   clean_sen_l1 = [clean_sentence(s) for s in sents]
+   idx_sentences_l1 = sentences_to_indexes(clean_sen_l1, dict_l1)
+   data_set = prepare_sentences(idx_sentences_l1, [[]], max_length, max_length)
+   sentences = (clean_sen_l1, [[]])
+   return sentences, data_set
+
+def decode(data_set):
+with tf.Session() as sess:
+   model = get_seq2seq_model(sess, True, dict_lengths, max_sentence_lengths, model_dir)
+   model.batch_size = 1
+   bucket = 0
+   encoder_inputs, decoder_inputs, target_weights = model.get_batch(
+     {bucket: [(data_set[0][0], [])]}, bucket)
+   _, _, output_logits = model.step(sess, encoder_inputs, decoder_inputs,
+                                   target_weights, bucket, True)
+   outputs = [int(np.argmax(logit, axis=1)) for logit in output_logits]
+   if data_utils.EOS_ID in outputs:
+       outputs = outputs[1:outputs.index(data_utils.EOS_ID)]
+tf.reset_default_graph()
+return " ".join([tf.compat.as_str(inv_dict_l2[output]) for output in outputs])
+
+if __name__ == "__main__":
+   dict_l1 = pickle.load(open(path_l1_dict, "rb"))
+   dict_l1_length = len(dict_l1)
+   dict_l2 = pickle.load(open(path_l2_dict, "rb"))
+   dict_l2_length = len(dict_l2)
+   inv_dict_l2 = {v: k for k, v in dict_l2.items()}
+   max_lengths = 10
+   dict_lengths = (dict_l1_length, dict_l2_length)
+   max_sentence_lengths = (max_lengths, max_lengths)
+   from bottle import route, run, request
+   @route('/api')
+   def api():
+       in_sentence = request.query.sentence
+     _, data_set = prepare_sentence(in_sentence, dict_l1, max_lengths)
+       resp = [{"in": in_sentence, "out": decode(data_set)}]
+       return dict(data=resp)
+   run(host='127.0.0.1', port=8080, reloader=True, debug=True)

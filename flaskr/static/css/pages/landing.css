@@ -1,0 +1,42 @@
+.screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--primary-color);
+  overflow: auto;
+}
+
+#btn-login {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.slider-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  gap: 1rem;
+}
+
+.logo-wrapper {
+  position: relative;
+  background-color: white;
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+}
+.image-wrapper {
+  position: relative;
+}
+.logo-wrapper img {
+  height: 20rem;
+}
+.intro img {
+  height: 70vh;
+}
