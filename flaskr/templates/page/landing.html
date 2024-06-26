@@ -2,7 +2,7 @@
 {% block inside %}
 
 <div class="screen">
-    <a class="waves-effect waves-light btn grey" id="btn-login"><i class="material-icons left">login</i>Login</a>
+    <a class="waves-effect waves-light btn grey" id="btn-login" href="{{ url_for('auth.login') }}"><i class="material-icons left">login</i>Login</a>
     <div class="splide">
         <div class="splide__track">
             <ul class="splide__list">
@@ -50,6 +50,7 @@
                 <li class="splide__slide">
                     <div class="slider-content">
                         <h1>MULAI</h1>
+                        <a href="{{ url_for('views.chatbot') }}" class="waves-effect waves-light btn green"><i class="material-icons left">forum</i> Mulai</a>
                     </div>
                 </li>
             </ul>

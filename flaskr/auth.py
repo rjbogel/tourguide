@@ -17,12 +17,14 @@ def login():
             if user.verify_password(password):
                 flash("Logged in!", category='success')
                 login_user(user, remember=True)
-                return redirect(url_for('views.home'))
+                return redirect(url_for('views.dashboard'))
             else:
                 flash('Password yang anda masukkan salah', category='error')
         else:
             flash('Username tidak dapat ditemukan', category='error')
-
+    
+    if current_user.is_authenticated:
+        return redirect(url_for('views.dashboard'))
     return render_template("auth/login.html", user=current_user)
 
 

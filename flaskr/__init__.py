@@ -63,7 +63,7 @@ def create_app(config_class=Config):
     except OSError:
         pass
 
-    from .models import User, AuthGroup, Destinasi, Distrik
+    from .models import User, AuthGroup
 
     login_manager = LoginManager()
     login_manager.login_view = "auth.login"

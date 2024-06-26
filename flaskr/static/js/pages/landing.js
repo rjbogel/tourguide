@@ -13,5 +13,4 @@ splide.on("mounted move", function () {
 });
 $(document).ready(function () {
   splide.mount();
-  console.log("aaaaaaaa");
 });

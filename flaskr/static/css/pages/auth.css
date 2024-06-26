@@ -6,7 +6,7 @@ body {
 }
 body {
   vertical-align: middle;
-  background: var(--main-color);
+  background: var(--primary-color);
 }
 
 #login-page {
@@ -20,4 +20,7 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+.card-panel {
+  border-radius: 1rem;
 }

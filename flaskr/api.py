@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, redirect, url_for, request, flash, jsonify
 from . import db
-from .models import User, Destinasi, Distrik, Rute
+from .models import User
 from flask_login import login_user, logout_user, login_required, current_user
 from flaskr.algoritma import AntColonyOptimization
 import numpy as np
@@ -21,7 +21,7 @@ def login():
             return {"toast": {
                 "icon": "success",
                 "title": "Login Berhasil"
-            }, "login": True, "redirect": url_for('views.home')}, 200
+            }, "login": True, "redirect": url_for('views.dashboard')}, 200
         else:
             return {"toast": {
                 "icon": "error",
