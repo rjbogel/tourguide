@@ -18,3 +18,7 @@ deactivate
 flask db migrate -m "init"
 flask db upgrade
 flask seed run
+
+-------------> Glove <---------------
+https://nlp.stanford.edu/data/glove.6B.zip
+https://drive.google.com/file/d/1jgnvIEp8rE3dh68lZXBHfyxzmeky9z6w/view
