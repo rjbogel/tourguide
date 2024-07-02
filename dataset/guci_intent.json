@@ -1,0 +1,29 @@
+{
+      "intents": [
+            {
+                  "intent": "Basic",
+                  "text": [
+                        "Assalamu'alaikum",
+                        "mikum",
+                        "ass",
+                        "assalamu'alaikum wr.wb",
+                        "."
+                  ],
+                  "responses": [
+                        "wa'alaikumusallam wr. Wb, Apakah ada yang bisa kami bantu?tolong ketikan apa yang anda hendak kunjungi di objek wisata guci "
+                  ],
+                  "extension": {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context": {
+                        "in": "",
+                        "out": "pembuka",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            }
+      ]
+}
