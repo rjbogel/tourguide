@@ -2,7 +2,6 @@ from flask import Blueprint, render_template, redirect, url_for, request, flash,
 from . import db
 from .models import User
 from flask_login import login_user, logout_user, login_required, current_user
-from flaskr.algoritma import AntColonyOptimization
 import numpy as np
 
 api = Blueprint("api", __name__)
@@ -33,153 +32,53 @@ def login():
                 "title": "Username tidak dapat ditemukan"
                 }, "login": False}, 200
 
+import pickle
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+from sklearn.preprocessing import LabelEncoder
+import tensorflow as tf
+import json
+import random
+import string
 
-@api.route("/destinasi", methods=["GET", "POST"])
-def destinasi():
-    if request.method == 'POST':
-        destinasi = Destinasi(id_distrik=request.form.get("id_distrik"),
-                              nama=request.form.get("nama"),
-                              deskripsi=request.form.get("deskripsi"),
-                              latitude=request.form.get("latitude"),
-                              longitude=request.form.get("longitude"))
-        db.session.add(destinasi)
-        db.session.commit()
-        return {"toast": {
-            "icon": "success",
-            "title": "Destinasi baru berhasil ditambahkan"
-        }, "data": destinasi.serialize()}, 200
+def processing_json_dataset(dataset):
+  tags = []
+  inputs = []
+  responses={}
+  for intent in dataset['intents']:
+    responses[intent['intent']]=intent['responses']
+    for lines in intent['text']:
+      inputs.append(lines)
+      tags.append(intent['intent'])
+  return [tags, inputs, responses]
 
-    id_distrik = request.args.get("id_distrik")
-    if (id_distrik):
-        data = Destinasi.query.filter_by(id_distrik=id_distrik).all()
-    else:
-        data = Destinasi.query.all()
-    return {"data": [k.serialize() for k in data]}, 200
-
-
-@api.route("/destinasi/<id>", methods=["GET", "POST", "DELETE"])
-def destinasibyid(id):
-    data = Destinasi.query.get(id)
-    if request.method == 'POST':
-        data.id_distrik = request.form.get("id_distrik")
-        data.nama = request.form.get("nama")
-        data.deskripsi = request.form.get("deskripsi")
-        data.latitude = request.form.get("latitude")
-        data.longitude = request.form.get("longitude")
-        db.session.commit()
-        return {"toast": {
-            "icon": "success",
-            "title": "Data Destinasi berhasil disimpan"
-        }, "data": data.serialize()}, 200
-    if request.method == 'DELETE':
-        db.session.delete(data)
-        db.session.commit()
-        return {"toast": {
-            "icon": "success",
-            "title": "Data Destinasi berhasil dihapus"
-        }}, 200
-    if data == None:
-        return {"toast": {
-            "icon": "error",
-            "title": "Data Destinasi tidak ditemukan"
-        }}, 404
-    return {"data": data.serialize()}, 200
-
-
-@api.route("/distrik", methods=["GET", "POST"])
-def distrik():
-    if request.method == 'POST':
-        distrik = Distrik(nama=request.form.get("distrik_nama"),
-                          latitude=request.form.get("distrik_latitude"),
-                          longitude=request.form.get("distrik_longitude"))
-        db.session.add(distrik)
-        db.session.commit()
-        return {"toast": {
-            "icon": "success",
-            "title": "Distrik baru berhasil ditambahkan"
-        }, "data": distrik.serialize()}, 200
-    data = Distrik.query.all()
-    return {"data": [k.serialize() for k in data]}, 200
-
-
-@api.route("/distrik/<id>", methods=["GET", "POST", "DELETE"])
-def distrikbyid(id):
-    data = Distrik.query.get(id)
-    if request.method == 'POST':
-        data.nama = request.form.get("distrik_nama")
-        data.latitude = request.form.get("distrik_latitude")
-        data.longitude = request.form.get("distrik_longitude")
-        db.session.commit()
-        return {"toast": {
-            "icon": "success",
-            "title": "Data Distrik berhasil disimpan"
-        }, "data": data.serialize()}, 200
-    if request.method == 'DELETE':
-        db.session.delete(data)
-        db.session.commit()
-        return {"toast": {
-            "icon": "success",
-            "title": "Data Distrik berhasil dihapus"
-        }}, 200
-    if data == None:
-        return {"toast": {
-            "icon": "error",
-            "title": "Data Distrik tidak ditemukan"
-        }}, 404
-    return {"data": data.serialize()}, 200
-
-
-@api.route("/rute", methods=["GET", "POST"])
-def rute():
-    if request.method == 'POST':
-        data = Rute(id_asal=request.form.get("id_asal"),
-                    id_tujuan=request.form.get("id_tujuan"),
-                    jarak=request.form.get("jarak"),
-                    path=request.form.get("path"))
-        db.session.add(data)
-        db.session.commit()
-        return {"toast": {
-            "icon": "success",
-            "title": "Rute baru berhasil ditambahkan"
-        }, "data": data.serialize()}, 200
-    data = Rute.query.all()
-    return {"data": [k.serialize() for k in data]}, 200
-
-
-@api.route("/rute/<id>", methods=["GET", "POST", "DELETE"])
-def rutebyid(id):
-    data = Rute.query.get(id)
-    if request.method == 'POST':
-        data.id_asal = request.form.get("id_asal")
-        data.id_tujuan = request.form.get("id_tujuan")
-        data.jarak = request.form.get("jarak")
-        data.path = request.form.get("path")
-        db.session.commit()
-        return {"toast": {
-            "icon": "success",
-            "title": "Data Rute berhasil disimpan"
-        }, "data": data.serialize()}, 200
-    if request.method == 'DELETE':
-        db.session.delete(data)
-        db.session.commit()
-        return {"toast": {
-            "icon": "success",
-            "title": "Data Rute berhasil dihapus"
-        }}, 200
-    if data == None:
-        return {"toast": {
-            "icon": "error",
-            "title": "Data Rute tidak ditemukan"
-        }}, 404
-    return {"data": data.serialize()}, 200
-
-
-@api.route("/implementasi", methods=["POST"])
-def implementasi():
+@api.route("/chatting", methods=["POST"])
+def chatting():
     req = request.get_json()
-    aco = AntColonyOptimization(
-        routes_matrix=np.array(req.get("matrix")), ants=req.get("ants"), iteration=req.get("iteration"), evaporation_rate=req.get(
-            "evaporation"), alpha=req.get("alpha"), beta=req.get("beta"),
-    )
-    aco.run()
-    return {"routes": (aco.routes-1).tolist(), "distances": aco.distances.tolist(), "best_route": (aco.best_route - 1).tolist(), "best_distance": aco.best_distance, "distance_matrix": aco.distance_matrix.tolist(), "best_distance_matrix": aco.best_distance_matrix.tolist()}, 200
+    query = req.get("query")
+    print(query)
+    texts = []
+    pred_input = query
+    pred_input = [letters.lower() for letters in pred_input if letters not in string.punctuation]
+    pred_input = ''.join(pred_input)
+    texts.append(pred_input)
+    with open('output/tokenizer.pickle', 'rb') as handle:
+        tokenizer = pickle.load(handle)
+    pred_input = tokenizer.texts_to_sequences(texts)
+    pred_input = np.array(pred_input).reshape(-1)
+    pred_input = pad_sequences([pred_input],6)
+    m = tf.keras.models.load_model('output/guci.keras')
+    output = m.predict(pred_input)
+    output = output.argmax()
+
+    le = LabelEncoder()
+    le.classes_ = np.load('output/classes.npy', allow_pickle=True)
+    le.classes_
+
+    response_tag = le.inverse_transform([output])[0]
+
+    with open("dataset/guci_intent.json") as guci_dataset:
+        dataset = json.load(guci_dataset)
+
+    [tags, inputs, responses] = processing_json_dataset(dataset)
+
+    return {"answer": random.choice(responses[response_tag])}, 200

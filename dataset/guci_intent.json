@@ -1,7 +1,7 @@
 {
       "intents": [
             {
-                  "intent": "Basic",
+                  "intent": "Basic1",
                   "text": [
                         "Assalamu'alaikum",
                         "mikum",
@@ -20,6 +20,871 @@
                   "context": {
                         "in": "",
                         "out": "pembuka",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "Basic2",
+                  "text": [
+                       "tiket masuk guci",
+                       "HTM",
+                       "tiket",	
+                       "biaya"
+
+                  ],
+                  "responses": [
+                        "harga tiket masuk guci pada hari biasa sebesar RP. 10.000, jika hari libur harga tiket masuk guci sebesar Rp. 15.000"
+                  ],
+                  "extension": {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context": {
+                        "in": "",
+                        "out": "harga",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "Basic3",
+                  "text": [
+                        "rekomendasi"
+                  ],
+                  "responses": [
+                        "rekomendasi apa yang kamu inginkan? Apakah kamu mau mandi air panas atau nongkrong atau menginap di hotel"
+                  ],
+                  "extension": {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context": {
+                        "in": "",
+                        "out": "pralokasi",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "Basic4",
+                  "text": [
+                        "hallo",
+                        "hai",	
+                        ".",	
+                        "p",
+                        "start",	
+                        "mulai"
+
+                  ],
+                  "responses": [
+                        "hallo , ada yang bisa kami bantu?tolong ketikan apa yang anda hendak kunjungi di objek wisata guci "
+                  ],
+                  "extension": {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context": {
+                        "in": "",
+                        "out": "pembuka",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "Basic5",
+                  "text": [
+                        "apa kabar?",
+                        "bagaimana kabarmu?",
+                        "bagaimana hari ini?"
+
+
+                  ],
+                  "responses": [
+                        "Alhamdulillah baik, bagaimana kabarmu? Semoga baik- baik saja. tolong ketikan apa yang anda hendak kunjungi di objek wisata guci"
+                  ],
+                  "extension": {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context": {
+                        "in": "",
+                        "out": "pembuka",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "Basic6",
+                  "text": [
+                        "hallo",	
+                        "hai",	
+                        ".",
+                        "p",	
+                        "start",	
+                        "mulai"
+
+                  ],
+                  "responses": [
+                        "selamat datang wisatan objek wisata guci tegal yang berbahagia.tolong ketikan apa yang anda hendak kunjungi di objek wisata guci "
+                  ],
+                  "extension": {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context": {
+                        "in": "",
+                        "out": "pembuka",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "Basic7",
+                  "text": [
+                        "hallo",	
+                        "hai",	
+                        ".",
+                        "p",	
+                        "start",	
+                        "mulai"
+
+                  ],
+                  "responses": [
+                        "jika anda bingung hendak ke mana, kami siap memandu perjalanan anda,tolong ketikan apa yang anda hendak kunjungi di objek wisata guci "
+                  ],
+                  "extension": {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context": {
+                        "in": "",
+                        "out": "pembuka",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "Basic8",
+                  "text": [
+                        "hallo",	
+                        "hai",	
+                        ".",
+                        "p",	
+                        "start",	
+                        "mulai"
+
+                  ],
+                  "responses": [
+                        "kami akan senantiasa memandu perjalanan anda untuk menuju destinasi yang hendak anda kunjungi,tolong ketikan apa yang anda hendak kunjungi di objek wisata guci "
+                  ],
+                  "extension": {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context": {
+                        "in": "",
+                        "out": "pembuka",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "Basic9",
+                  "text": [
+                        "terima kasih",	
+                        "selesai",	
+                        "stop", 	
+                        "cukup",	
+                        "sudah",	
+                        "ok"
+
+                  ],
+                  "responses": [
+                        "semoga selamat sampai tujuan, pastikan hati anda selalu bahagia ,jangan lupa have fun bersama kami tour guide asisstant objek wisata guci, guci mbetahi lan ngangeni, Terimasih dan selamat berwisata. "
+                  ],
+                  "extension": {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context": {
+                        "in": "",
+                        "out": "penutup",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                              "intent": "lokasi1",
+                              "text": [
+                                    "kolam renang barokah?",	
+                                    "hotel barokah?",
+                                    "barokah guci",	
+                                    "lokasi barokah guci"
+            
+                              ],
+                              "responses": [
+                                    "Anda dapat mengunjungi <WISATA> dengan detail sebagai berikut ini :"
+                              ],
+                              "extension": {
+                                    "function": "",
+                                    "entities": false,
+                                    "responses": []
+                              },
+                              "context": {
+                                    "in": "",
+                                    "out": "pemandian",
+                                    "clear": false
+                              },
+                              "entityType": "NA",
+                              "entities": []
+                        },
+                        {
+                              "intent": "lokasi2",
+                              "text": [
+                                    "hotel joglo ageng?",	
+                                    "hotel termewah di guci?",	
+                                    "joglo ageng",	
+                                    "fyp tiktok guci"
+            
+                              ],
+                              "responses": [
+                                    "Anda dapat mengunjungi <HOTEL> dengan detail sebagai berikut ini :"
+                              ],
+                              "extension": {
+                                    "function": "",
+                                    "entities": false,
+                                    "responses": []
+                              },
+                              "context": {
+                                    "in": "",
+                                    "out": "pemandian",
+                                    "clear": false
+                              },
+                              "entityType": "NA",
+                              "entities": []
+                        },
+                        {
+                              "intent": "lokasi3",
+                              "text": [
+                                    "hotel  sun q ta ?",
+                                    "water boom sunq ta?",	
+                                    "penginapan sun q ta?"
+                              ],
+                              "responses": [
+                                    "Anda dapat mengunjungi <HOTEL> dengan detail sebagai berikut ini :"
+                              ],
+                              "extension": {
+                                    "function": "",
+                                    "entities": false,
+                                    "responses": []
+                              },
+                              "context": {
+                                    "in": "",
+                                    "out": "penginapan",
+                                    "clear": false
+                              },
+                              "entityType": "NA",
+                              "entities": []
+                        },
+                        {
+                              "intent": "lokasi4",
+                              "text": [
+                                    "hotel duta wisata?",	
+                                    "penginapan duta wisata?", 	
+                                    "duta wisata guci"
+                              ],
+                              "responses": [
+                                    "Anda dapat mengunjungi <HOTEL> dengan detail sebagai berikut ini :"
+                              ],
+                              "extension": {
+                                    "function": "",
+                                    "entities": false,
+                                    "responses": []
+                              },
+                              "context": {
+                                    "in": "",
+                                    "out": "penginapan",
+                                    "clear": false
+                              },
+                              "entityType": "NA",
+                              "entities": []
+                        },
+                        {
+                              "intent": "lokasi5",
+                              "text": [
+                                    "hotel guci ashafana?",	
+                                    "pemandian guci ashafana?",	
+                                    "guci ashafana"
+                              ],
+                              "responses": [
+                                    "Anda dapat mengunjungi <HOTEL> dengan detail sebagai berikut ini :"
+                              ],
+                              "extension": {
+                                    "function": "",
+                                    "entities": false,
+                                    "responses": []
+                              },
+                              "context": {
+                                    "in": "",
+                                    "out": "penginapan",
+                                    "clear": false
+                              },
+                              "entityType": "NA",
+                              "entities": []
+                        },
+                        {
+                  "intent": "lokasi6",
+                  "text": [
+                        "pemandian pancuran13?",	
+                        "pemandian air panas guci",	
+                        "pemandian air panas",	
+                        "rekomendasi pemandian air panas"
+
+                  ],
+                  "responses": [
+                        "Anda dapat mengunjungi <WISATA> dengan detail sebagai berikut ini :"
+                  ],
+                  "extension": {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context": {
+                        "in": "",
+                        "out": "pemandian",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "lokasi7",
+                  "text": [
+                        "hotel guciku?",	
+                        "water boom guciku?",	
+                        "water boom"
+
+                  ],
+                  "responses": [
+                        "Anda dapat mengunjungi <WISATA> dengan detail sebagai berikut ini :"
+                  ],
+                  "extension": {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context": {
+                        "in": "",
+                        "out": "pemandian",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "lokasi8",
+                  "text": [
+                        "hotel guci gung?",	
+                        "penginapan guci gung?",	
+                        "guci gung"
+
+                  ],
+                  "responses": [
+                        "Anda dapat mengunjungi <HOTEL> dengan detail sebagai berikut ini :"
+                  ],
+                  "extension": {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context": {
+                        "in": "",
+                        "out": "penginapan",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "lokasi9",
+                  "text": [
+                        "hotel salma?",	
+                        "cafe salma guci?",	
+                        "salma"
+
+                  ],
+                  "responses": [
+                        "Anda dapat mengunjungi <HOTEL> dengan detail sebagai berikut ini :"
+                  ],
+                  "extension": {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context": {
+                        "in": "",
+                        "out": "penginapan",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "lokasi10",
+                  "text": [
+                        "wisata rindu alam?",
+                        "pemandian rindu alam?",	
+                        "rindu alam"
+
+                  ],
+                  "responses": [
+                        "Anda dapat mengunjungi <WISATA> dengan detail sebagai berikut ini :"
+                  ],
+                  "extension": {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context": {
+                        "in": "",
+                        "out": "pemandian",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "lokasi11",
+                  "text": [
+                        "hotel guci forest?",	
+                        "pemandian guci forest?",
+                        "guci forest",	
+                        "pemandian pinusan",	
+                        "camping ground"
+
+
+                  ],
+                  "responses": [
+                        "Anda dapat mengunjungi <WISATA> dengan detail sebagai berikut ini :"
+                  ],
+                  "extension": {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context": {
+                        "in": "",
+                        "out": "pemandian",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "lokasi12",
+                  "text": [
+                        "hotel baron hill?",
+                        "spot foto guci?",	
+                        "jembatan kaca guci?",	
+                        "fyp ig"
+
+                  ],
+                  "responses": [
+                        "Anda dapat mengunjungi <SPOT> dengan detail sebagai berikut ini :"
+                  ],
+                  "extension": {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context": {
+                        "in": "",
+                        "out": "spot",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "lokasi13",
+                  "text": [
+                        "hotel golden park?",	
+                        "prosotan warna warni?",	
+                        "spot foto guci",	
+                        "tempat bagus buat konten di guci"
+
+                  ],
+                  "responses": [
+                        "Anda dapat mengunjungi <SPOT> dengan detail sebagai berikut ini :"
+                  ],
+                  "extension": {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context": {
+                        "in": "",
+                        "out": "spot",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "lokasi14",
+                  "text": [
+                        "curug serwiti?",
+                        "serwiti guci?",	
+                        "air terjun guci",	
+                        "wisata viral guci"
+
+                  ],
+                  "responses": [
+                        "Anda dapat mengunjungi <SPOT> dengan detail sebagai berikut ini :"
+                  ],
+                  "extension": {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context": {
+                        "in": "",
+                        "out": "spot",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "lokasi15",
+                  "text": [
+                        "hotel the geong?",	
+                        "spot foto guci?",	
+                        "the geong"
+
+                  ],
+                  "responses": [
+                        "Anda dapat mengunjungi <SPOT> dengan detail sebagai berikut ini :"
+                  ],
+                  "extension": {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context": {
+                        "in": "",
+                        "out": "spot",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "lokasi16",
+                  "text": [
+                        "graha tirta ayu?",	
+                        "GTA?"
+
+                  ],
+                  "responses": [
+                        "Anda dapat mengunjungi <WISATA> dengan detail sebagai berikut ini :"
+                  ],
+                  "extension": {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context": {
+                        "in": "",
+                        "out": "pemandian",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "lokasi17",
+                  "text": [
+                        "hotel kampung guci?",	
+                        "kampung  guci",	
+                        "penginapan kampung guci?",
+                        "paling sering dikunjungi di guci"
+
+                  ],
+                  "responses": [
+                        "Anda dapat mengunjungi <HOTEL> dengan detail sebagai berikut ini :"
+                  ],
+                  "extension": {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context": {
+                        "in": "",
+                        "out": "penginapan",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "lokasi18",
+                  "text": [
+                        "shtepine cafe?",	
+                        "cafe guci"
+
+                  ],
+                  "responses": [
+                        "Anda dapat mengunjungi <MAKANAN> dengan detail sebagai berikut ini :"
+                  ],
+                  "extension": {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context": {
+                        "in": "",
+                        "out": "kafe",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "lokasi19",
+                  "text": [
+                        "cafe g'bugs shelter?",	
+                        "gubug selter",	
+                        "kafe guci",	
+                        "tempat nongkrong diguci"
+
+                  ],
+                  "responses": [
+                        "Anda dapat mengunjungi <MAKANAN> dengan detail sebagai berikut ini :"
+                  ],
+                  "extension": {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context": {
+                        "in": "",
+                        "out": "kafe",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "lokasi20",
+                  "text": [
+                        "cafe cod?",	
+                        "cod guci",	
+                        "cafe guci",	
+                        "kafe"
+
+                  ],
+                  "responses": [
+                        "Anda dapat mengunjungi <MAKANAN> dengan detail sebagai berikut ini :"
+                  ],
+                  "extension": {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context": {
+                        "in": "",
+                        "out": "kafe",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "lokasi21",
+                  "text": [
+                        "hotel sabda alam?",
+                        "penginapan sabda alam",	
+                        "sabda alam"
+
+                  ],
+                  "responses": [
+                        "Anda dapat mengunjungi <HOTEL> dengan detail sebagai berikut ini :"
+                  ],
+                  "extension": {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context": {
+                        "in": "",
+                        "out": "penginapan",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "lokasi22",
+                  "text": [
+                        "hotel guci kencana?",
+                        "penginapan guci kencana",	
+                        "guci kencana"
+
+                  ],
+                  "responses": [
+                        "Anda dapat mengunjungi <HOTEL> dengan detail sebagai berikut ini :"
+                  ],
+                  "extension": {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context": {
+                        "in": "",
+                        "out": "penginapan",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "lokasi23",
+                  "text": [
+                        "hotel rawamba?",	
+                        "penginapan rawamba?",	
+                        "rawamba"
+
+
+                  ],
+                  "responses": [
+                        "Anda dapat mengunjungi <HOTEL> dengan detail sebagai berikut ini :"
+                  ],
+                  "extension": {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context": {
+                        "in": "",
+                        "out": "penginapan",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "lokasi24",
+                  "text": [
+                        "hotel grand mega guci?",	
+                        "grand mega guci",	
+                        "grand mega"
+
+                  ],
+                  "responses": [
+                        "Anda dapat mengunjungi <HOTEL> dengan detail sebagai berikut ini :"
+                  ],
+                  "extension": {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context": {
+                        "in": "",
+                        "out": "penginapan",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "lokasi25",
+                  "text": [
+                        "hotel the onsen?",	
+                        "pemandian onsen?",	
+                        "penginapan onsen guci",	
+                        "onsen guci",	
+                        "fyp"
+
+                  ],
+                  "responses": [
+                        "Anda dapat mengunjungi <WISATA> dengan detail sebagai berikut ini :"
+                  ],
+                  "extension": {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context": {
+                        "in": "",
+                        "out": "pemandian",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "lokasi26",
+                  "text": [
+                        "hotel gulala azana?",	
+                        "cafe gulala ?",	
+                        "gulala guci",	
+                        "gulala"
+
+                  ],
+                  "responses": [
+                        "Anda dapat mengunjungi <MAKANAN> dengan detail sebagai berikut ini :"
+                  ],
+                  "extension": {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context": {
+                        "in": "",
+                        "out": "kafe",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "lokasi27",
+                  "text": [
+                        "hotel gran dian?",	
+                        "gran dian guci?",	
+                        "grand dian" 
+
+                  ],
+                  "responses": [
+                        "Anda dapat mengunjungi <HOTEL> dengan detail sebagai berikut ini :"
+                  ],
+                  "extension": {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context": {
+                        "in": "",
+                        "out": "penginapan",
                         "clear": false
                   },
                   "entityType": "NA",
