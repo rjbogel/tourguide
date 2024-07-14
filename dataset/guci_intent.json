@@ -74,12 +74,7 @@
             {
                   "intent": "Basic4",
                   "text": [
-                        "hallo",
-                        "hai",	
-                        ".",	
-                        "p",
-                        "start",	
-                        "mulai"
+                        "hallo"
 
                   ],
                   "responses": [
@@ -125,13 +120,9 @@
             },
             {
                   "intent": "Basic6",
-                  "text": [
-                        "hallo",	
-                        "hai",	
-                        ".",
-                        "p",	
-                        "start",	
-                        "mulai"
+                  "text": [	
+                        
+                        "start"
 
                   ],
                   "responses": [
@@ -153,12 +144,7 @@
             {
                   "intent": "Basic7",
                   "text": [
-                        "hallo",	
-                        "hai",	
-                        ".",
-                        "p",	
-                        "start",	
-                        "mulai"
+                        "saya butuh bantuan"
 
                   ],
                   "responses": [
@@ -180,12 +166,8 @@
             {
                   "intent": "Basic8",
                   "text": [
-                        "hallo",	
-                        "hai",	
-                        ".",
-                        "p",	
-                        "start",	
-                        "mulai"
+	
+                        "hai"
 
                   ],
                   "responses": [
