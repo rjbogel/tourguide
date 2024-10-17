@@ -18,6 +18,19 @@ function getAnswer(query) {
       preload.fadeOut("normal", () => {
         const answerEl = $(chatBot(response.answer));
         chatWrapper.append(answerEl);
+        answerEl.find("map").each(function (e) {
+          const id = $(this).data("id");
+          const lokasi = cloud.get("lokasi").find((l) => l.id == id);
+          let elLokasi = $(`
+<div class="mapouter">
+  <div class="gmap_canvas"><iframe width="725" height="300" id="gmap_canvas"
+      src="https://maps.google.com/maps?q=${lokasi.coor}&t=&z=18&ie=UTF8&iwloc=&output=embed" frameborder="0"
+      scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.analarmclock.com"></a><br><a href="https://www.alarm-clock.net"></a><br><a href="https://www.ongooglemaps.com">adding google map to website</a>
+  </div>
+</div>
+          `);
+          answerEl.append(elLokasi);
+        });
         answerEl.fadeIn("normal", () => {
           chatWrapper[0].scrollTop = chatWrapper[0].scrollHeight;
         });
@@ -60,4 +73,8 @@ $(".input-button").on("click", function (e) {
   });
 });
 
-$(document).ready(function () {});
+$(document).ready(function () {
+  cloud.add(origin + "/api/lokasi", {
+    name: "lokasi",
+  });
+});

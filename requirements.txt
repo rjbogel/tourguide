@@ -37,3 +37,4 @@ SQLAlchemy-serializer
 PyPDF2
 pyhtml2pdf
 terbilang
+Sastrawi

@@ -1,8 +1,17 @@
-from flask import Blueprint, render_template, redirect, url_for, request, flash, jsonify
+from flask import Blueprint, render_template, redirect, url_for, request, flash, jsonify, Response
 from . import db
 from .models import User
 from flask_login import login_user, logout_user, login_required, current_user
 import numpy as np
+
+import pickle
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+from sklearn.preprocessing import LabelEncoder
+import tensorflow as tf
+import json
+import random
+import string
+import pandas as pd
 
 api = Blueprint("api", __name__)
 
@@ -32,13 +41,11 @@ def login():
                 "title": "Username tidak dapat ditemukan"
                 }, "login": False}, 200
 
-import pickle
-from tensorflow.keras.preprocessing.sequence import pad_sequences
-from sklearn.preprocessing import LabelEncoder
-import tensorflow as tf
-import json
-import random
-import string
+
+@api.route("/lokasi", methods=["GET"])
+def lokasi():
+    data = pd.read_csv("dataset/lokasi.csv", delimiter=";")
+    return Response(data.to_json(orient="records"), mimetype='application/json')
 
 def processing_json_dataset(dataset):
   tags = []
