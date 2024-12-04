@@ -266,7 +266,7 @@
 
                   ],
                   "responses": [
-                        "semoga selamat sampai tujuan, pastikan hati anda selalu bahagia ,jangan lupa have fun bersama kami tour guide asisstant objek wisata guci, guci mbetahi lan ngangeni, Terimasih dan selamat berwisata. "
+                        "semoga selamat sampai tujuan, pastikan hati anda selalu bahagia ,jangan lupa have fun bersama kami tour guide asisstant objek wisata guci, guci mbetahi lan ngangeni, Terimasih dan selamat berwisata."
                   ],
                   "extension": {
                         "function": "",
@@ -315,16 +315,7 @@
             {
                   "intent": "lokasi2",
                   "text": [
-                        "hotel joglo ageng?",
-                        "hotel termewah di guci?",
-                        "joglo ageng",
-                        "viral tiktok guci",
-                        "Berapa harga joglo?",
-                        "Fasilitas joglo apa?",
-                        "Tarif per malam joglo?",
-                        "Lokasi joglo ageng?",
-                        "Bintang hotel joglo?",
-                        "Joglo punya kolam?"
+                        
 
                   ],
                   "responses": [
@@ -505,14 +496,14 @@
                   "text": [
                         "hotel guci gung?",
                         "penginapan guci gung?",
-                        "guci gung",
+                        "informasi guci gung",
                         "Kolam renang di Guci Gung?",
                         "Harga tiket Guci Gung?",
                         "Fasilitas di Guci Gung?",
                         "Guci Gung buka kapan?",
-                        "Lokasi Guci Gung mana?",
+                        "Lokasi Guci Gung dimana?",
                         "Ada gazebo di Guci Gung?",
-                        "Tiket anak di Guci Gung?"
+                        "Tiket masuk di Guci Gung?"
 
                   ],
                   "responses": [
@@ -567,7 +558,7 @@
                   "text": [
                         "wisata rindu alam?",
                         "pemandian rindu alam?",
-                        "rindu alam",
+                        "informasi rindu alam",
                         "Tiket masuk Rindu Alam?",
                         "Fasilitas di Rindu Alam?",
                         "Kolam renang di Rindu Alam?",
@@ -662,7 +653,6 @@
                   "text": [
                         "hotel golden park?",
                         "prosotan warna warni?",
-                        "spot foto guci",
                         "tempat bagus buat konten di guci",
                         "Tiket masuk Golden Park?",
                         "Fasilitas di Golden Park?",
@@ -725,7 +715,7 @@
                   "text": [
                         "hotel the geong?",
                         "spot foto guci the geong?",
-                        "the geong",
+                        "informasi the geong",
                         "Tiket masuk The Geong?",
                         "Spot foto di the geong?",
                         "Fasilitas di the geong apa?",
@@ -787,7 +777,7 @@
                   "intent": "lokasi17",
                   "text": [
                         "hotel kampung guci?",
-                        "kampung  guci",
+                        "informasi kampung  guci",
                         "penginapan kampung guci?",
                         "paling sering dikunjungi di guci",
                         "Fasilitas di kampung guci apa?",
@@ -819,7 +809,7 @@
                   "intent": "lokasi18",
                   "text": [
                         "shtepine cafe?",
-                        "cafe guci",
+                        "informasi kafe guci",
                         "Harga makanan di Shtepine?",
                         "Fasilitas di kafe mana?",
                         "Menu favorit di Shtepine?",
@@ -851,7 +841,6 @@
                   "text": [
                         "kafe g'bugs shelter?",
                         "gubug selter",
-                        "kafe guci",
                         "tempat nongkrong diguci",
                         "Harga tenda di gubug selter?",
                         "Fasilitas di gubug selter apa?",
@@ -915,7 +904,7 @@
                   "text": [
                         "hotel sabda alam?",
                         "penginapan sabda alam",
-                        "sabda alam",
+                        "informasi sabda alam",
                         "Harga tiket Sabda Alam?",
                         "Fasilitas di Sabda Alam?",
                         "Kolam renang sabda alam ada ?",
@@ -1008,7 +997,7 @@
                   "text": [
                         "hotel grand mega guci?",
                         "grand mega guci",
-                        "grand mega guci",
+                        "informasi grand mega guci",
                         "Harga kamar grand mega guci?",
                         "Fasilitas di grand mega guci?",
                         "Kolam renang ada?",
@@ -1104,7 +1093,7 @@
                   "text": [
                         "hotel grand dian?",
                         "grand dian guci?",
-                        "grand dian",
+                        "informasi grand dian",
                         "Harga kamar Grand Dian?",
                         "Fasilitas di Grand Dian?",
                         "Lokasi Grand Dian mana?",
