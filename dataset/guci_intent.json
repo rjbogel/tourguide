@@ -35,20 +35,20 @@
             {
                   "intent": "Basic2",
                   "text": [
-                        "tiket masuk guci",
-                        "HTM",
-                        "tiket",
-                        "biaya",
-                        "Berapa tiket masuk?",
-"Harga tiket hari libur?",
-"Ada diskon tiket?",
-"Cara beli tiket?",
-"Tiket rombongan berapa?",
-"Tiket keluarga ada?"
+                        "tiket masuk wisata guci",
+                        "HTM wisata guci",
+                        "tiket wisata guci",
+                        "biaya wisata guci",
+                        "Berapa tiket masuk wisata guci?",
+                        "Harga tiket wisata guci hari libur?",
+                        "Ada diskon tiket wisata guci?",
+                        "Cara beli tiket wisata guci?",
+                        "Tiket wisata guci rombongan berapa?",
+                        "Tiket wisata guci keluarga ada?"
 
                   ],
                   "responses": [
-                        "harga tiket masuk guci pada hari biasa sebesar RP. 10.000, jika hari libur harga tiket masuk guci sebesar Rp. 15.000"
+                        "harga tiket masuk guci pada hari biasa sebesar RP. 15.000/orang, jika hari libur harga tiket masuk guci sebesar Rp.20.000/orang, untuk tiket keluarga/rombongan ,dikalikan jumlah anggota rombongan, untuk pembelian tiket bisa langsung di lokasi,"
                   ],
                   "extension": {
                         "function": "",
@@ -68,14 +68,14 @@
                   "text": [
                         "rekomendasi wisata terbaik di guci",
                         "apa saja wisata terbaik di guci",
-                        "Tempat wisata bagus?",
+                        "Tempat guci bagus?",
                         "Wisata air panas mana?",
                         "Objek wisata populer?",
-                        "Tempat terbaik selfie?",
-                        "Destinasi hits guci?",
-                        "Aktivitas outdoor apa?",
+                        "Tempat terbaik selfie di guci?",
+                        "Destinasi hits di guci?",
+                        "Aktivitas outdoor di guci apa?",
                         "Relaksasi di guci?",
-                        "Wisata air seru?"
+                        "Wisata air di guci yang seru?"
 
                   ],
                   "responses": [
@@ -293,7 +293,7 @@
                         "Fasilitas kolam barokah?",
                         "Jam buka barokah?",
                         "Apa di hotel barokah?",
-                        "Kolam renang nyaman?"
+                        "Kolam renang barokah nyaman?"
 
                   ],
                   "responses": [
@@ -349,13 +349,13 @@
                         "hotel  sun q ta ?",
                         "water boom sunq ta?",
                         "penginapan sun q ta?",
-                        "sunQta",
-                        "Harga kamar Sun Q?",
-                        "Kolam air panas ada?",
-                        "Lokasi Sun Q mana?",
-                        "Fasilitas Sun Q apa?",
-                        "Cocok untuk keluarga?",
-                        "Akses ke Sun Q?"
+                        "sun Q ta",
+                        "Harga kamar Sun Q ta?",
+                        "Kolam air panas di Sun Q ta ada?",
+                        "Lokasi Sun Q ta mana?",
+                        "Fasilitas Sun Q ta apa?",
+                        "Sun Q ta Cocok untuk keluarga?",
+                        "Akses ke Sun Q ta?"
 
                   ],
                   "responses": [
@@ -380,13 +380,13 @@
                         "hotel duta wisata?",
                         "penginapan duta wisata?",
                         "duta wisata guci",
-                        "Harga kamar Duta?",
-                        "Kolam air panas ada?",
-                        "Lokasi Duta mana?",
-                        "Fasilitas restoran ada?",
-                        "Kamar termurah Duta?",
-                        "Fasilitas hotel Duta?",
-                        "Diskon Duta ada?"
+                        "Harga kamar Duta wisata?",
+                        "Kolam air panas Duta wisata ada?",
+                        "Lokasi Duta wisata mana?",
+                        "Fasilitas restoran Duta wisata ada?",
+                        "Kamar termurah Duta wisata?",
+                        "Fasilitas hotel Duta wisata?",
+                        "Diskon Duta wisata ada?"
 
                   ],
                   "responses": [
@@ -411,13 +411,13 @@
                         "hotel guci ashafana?",
                         "pemandian guci ashafana?",
                         "guci ashafana",
-                        "Berapa tarif Ashafana?",
-                        "Fasilitas di Ashafana?",
-                        "Lokasi guci Ashafana?",
-                        "Kolam air panas Ashafana?",
-                        "Glamping di Ashafana?",
-                        "Villa Ashafana ada?",
-                        "Ashafana cocok keluarga?"
+                        "Berapa tarif guci ashafana?",
+                        "Fasilitas di guci ashafana?",
+                        "Lokasi guci guci ashafana?",
+                        "Kolam air panas guci ashafana?",
+                        "Glamping di guci ashafana?",
+                        "Villa guci ashafana ada?",
+                        "guci ashafana cocok keluarga?"
 
                   ],
                   "responses": [
@@ -445,11 +445,12 @@
                         "rekomendasi pemandian air panas",
                         "pancuran 13",
                         "Pancuran 13 di mana?",
-                        "Berapa harga pancuran?",
+                        "Berapa harga pancuran 13?",
                         "Manfaat air panas apa?",
                         "Pancuran 13 ramai?",
                         "Jam buka pancuran 13?",
-                        "Fasilitas di pancuran?"
+                        "Taman wisata air guci?",
+                        "Fasilitas di pancuran 13?"
 
                   ],
                   "responses": [
@@ -480,7 +481,7 @@
                         "Kolam renang Guciku ada?",
                         "Ada hotel di Guciku?",
                         "Water boom buka kapan?",
-                        "Cocok untuk keluarga?"
+                        "Water boom Cocok untuk keluarga?"
 
                   ],
                   "responses": [
@@ -505,13 +506,13 @@
                         "hotel guci gung?",
                         "penginapan guci gung?",
                         "guci gung",
-                        "Kolam renang di Gung?",
+                        "Kolam renang di Guci Gung?",
                         "Harga tiket Guci Gung?",
                         "Fasilitas di Guci Gung?",
                         "Guci Gung buka kapan?",
                         "Lokasi Guci Gung mana?",
-                        "Ada gazebo di Gung?",
-                        "Tiket anak di Gung?"
+                        "Ada gazebo di Guci Gung?",
+                        "Tiket anak di Guci Gung?"
 
                   ],
                   "responses": [
@@ -542,7 +543,7 @@
                         "Ada kolam renang Salma?",
                         "Sarapan di Salma ada?",
                         "Villa Salma cocok keluarga?",
-                        "Harga kamar termurah?"
+                        "Harga kamar Salma termurah?"
 
                   ],
                   "responses": [
@@ -569,11 +570,11 @@
                         "rindu alam",
                         "Tiket masuk Rindu Alam?",
                         "Fasilitas di Rindu Alam?",
-                        "Kolam renang di sana?",
+                        "Kolam renang di Rindu Alam?",
                         "Jam buka Rindu Alam?",
                         "Rute ke Rindu Alam?",
-                        "Area camping di sana?",
-                        "Cocok untuk keluarga?"
+                        "Area camping di Rindu Alam?",
+                        "Rindu Alam Cocok untuk keluarga?"
 
                   ],
                   "responses": [
@@ -598,11 +599,11 @@
                         "hotel guci forest?",
                         "pemandian guci forest?",
                         "guci forest",
-                        "pemandian pinusan",
-                        "camping ground",
+                        "pemandian pinusan guci forest",
+                        "camping ground guci forest",
                         "Glamping di Guci Forest?",
                         "Tiket masuk Forest berapa?",
-                        "Jembatan gantung ada?",
+                        "Jembatan gantung guci forest ada?",
                         "Aktivitas di Guci Forest?",
                         "Kafe di Forest mana?",
                         "Spot foto di Forest?",
@@ -635,8 +636,8 @@
                         "Aktivitas di Baron Hill?",
                         "Fasilitas di Baron Hill?",
                         "Spot foto di Baron?",
-                        "Berapa harga tiketnya?",
-                        "Pemandangan terbaik di Baron?",
+                        "Berapa harga tiketnya baron hill?",
+                        "Pemandangan terbaik di baron hill?",
                         "Baron Hill buka kapan?"
 
                   ],
@@ -667,9 +668,9 @@
                         "Fasilitas di Golden Park?",
                         "Wahana di Golden Park?",
                         "Kolam renang Golden Park?",
-                        "Tempat piknik di sana?",
-                        "Harga tiket keluarga?",
-                        "Tempat bermain anak?"
+                        "Tempat piknik di golden park?",
+                        "Harga tiket keluarga golden park?",
+                        "Tempat bermain anak golden park?"
 
                   ],
                   "responses": [
@@ -699,8 +700,8 @@
                         "Lokasi Curug Serwiti?",
                         "Akses menuju Curug Serwiti?",
                         "Fasilitas di Serwiti?",
-                        "Berapa tinggi curugnya?",
-                        "Jam buka curug?",
+                        "Berapa tinggi curug serwiti?",
+                        "Jam buka curug serwiti?",
                         "Spot foto di Serwiti?"
                   ],
                   "responses": [
@@ -723,15 +724,15 @@
                   "intent": "lokasi15",
                   "text": [
                         "hotel the geong?",
-                        "spot foto guci?",
+                        "spot foto guci the geong?",
                         "the geong",
                         "Tiket masuk The Geong?",
-                        "Spot foto di Geong?",
-                        "Fasilitas di Geong apa?",
-                        "Glamping di Geong ada?",
+                        "Spot foto di the geong?",
+                        "Fasilitas di the geong apa?",
+                        "Glamping di the geong ada?",
                         "Pemandangan The Geong?",
-                        "Hiking di Geong mana?",
-                        "Jam buka The Geong?"
+                        "Hiking di the geong mana?",
+                        "Jam buka The the geong?"
 
                   ],
                   "responses": [
@@ -755,14 +756,14 @@
                   "text": [
                         "graha tirta ayu?",
                         "GTA?",
-                        "Lokasi Graha Tirta mana?",
-                        "Kolam air panas ada?",
-                        "Fasilitas di Graha apa?",
-                        "Harga masuk Graha Tirta?",
-                        "Area piknik Graha ada?",
-                        "Tempat nginap di sana?",
-                        "Aktivitas di Graha apa?",
-                        "Rute menuju Graha Tirta?"
+                        "Lokasi Graha Tirta ayu mana?",
+                        "Kolam air panas ada Graha Tirta ayu?",
+                        "Fasilitas di Graha Tirta ayu apa?",
+                        "Harga masuk Graha Tirta ayu?",
+                        "Area piknik Graha Tirta ayu ada?",
+                        "Tempat nginap di Graha Tirta ayu?",
+                        "Aktivitas di Graha Tirta ayu apa?",
+                        "Rute menuju Graha Tirta ayu?"
 
 
                   ],
@@ -789,13 +790,13 @@
                         "kampung  guci",
                         "penginapan kampung guci?",
                         "paling sering dikunjungi di guci",
-                        "Fasilitas di Kampung apa?",
-                        "Kolam renang di sana?",
-                        "Harga tiket masuk?",
-                        "Aktivitas di Kampung Goetci?",
-                        "Ada tempat nginap?",
-                        "Spot foto di Goetci?",
-                        "Harga penginapan berapa?"
+                        "Fasilitas di kampung guci apa?",
+                        "Kolam renang di kampung guci?",
+                        "Harga tiket masuk kampung guci?",
+                        "Aktivitas di kampung guci?",
+                        "Ada tempat nginap kampung guci?",
+                        "Spot foto di kampung guci?",
+                        "Harga penginapan berapa kampung guci?"
                         
                   ],
                   "responses": [
@@ -848,17 +849,17 @@
             {
                   "intent": "lokasi19",
                   "text": [
-                        "cafe g'bugs shelter?",
+                        "kafe g'bugs shelter?",
                         "gubug selter",
                         "kafe guci",
                         "tempat nongkrong diguci",
-                        "Harga tenda di G'Bugs?",
-                        "Fasilitas di G'Bugs apa?",
-                        "Spot foto di G'Bugs?",
-                        "Kafe di G'Bugs ada?",
+                        "Harga tenda di gubug selter?",
+                        "Fasilitas di gubug selter apa?",
+                        "Spot foto di gubug selter?",
+                        "Kafe di gubug selter ada?",
                         "Tempat camping ada?",
-                        "Jam buka G'Bugs kapan?",
-                        "Aktivitas di G'Bugs apa?"
+                        "Jam buka gubug selter kapan?",
+                        "Aktivitas di gubug selter apa?"
                         
                   ],
                   "responses": [
@@ -880,15 +881,15 @@
             {
                   "intent": "lokasi20",
                   "text": [
-                        "cafe cod?",
+                        "kafe cod?",
                         "cod guci",
-                        "cafe guci",
+                        "kafe guci",
                         "Harga kopi di COD?",
                         "Fasilitas di COD mana?",
                         "Wi-Fi di kafe ada?",
                         "Menu di COD apa?",
-                        "Tempat duduk outdoor?",
-                        "Kafe buka kapan?",
+                        "Tempat duduk outdoor cod?",
+                        "Kafe buka kapan cod?",
                         "Lokasi COD di mana?",
                         "Makanan berat di COD?"
                                           
@@ -917,11 +918,11 @@
                         "sabda alam",
                         "Harga tiket Sabda Alam?",
                         "Fasilitas di Sabda Alam?",
-                        "Kolam renang ada?",
+                        "Kolam renang sabda alam ada ?",
                         "Aktivitas di Sabda Alam?",
                         "Lokasi Sabda Alam mana?",
-                        "Tiket keluarga berapa?",
-                        "Spot foto di Sabda?"
+                        "Tiket keluarga berapa sabda alam?",
+                        "Spot foto di sabda alam?"
                                               
                   ],
                   "responses": [
@@ -946,13 +947,13 @@
                         "hotel guci kencana?",
                         "penginapan guci kencana",
                         "guci kencana",
-                        "Harga kamar Kencana?",
-                        "Fasilitas di Kencana?",
+                        "Harga kamar guci kencana?",
+                        "Fasilitas di guci kencana?",
                         "Kolam renang ada?",
-                        "Lokasi Kencana di mana?",
-                        "Sarapan di Kencana ada?",
+                        "Lokasi guci kencana di mana?",
+                        "Sarapan di guci kencana ada?",
                         "Harga villa berapa?",
-                        "Kamar termurah di Kencana?"
+                        "Kamar termurah di guci kencana?"
                         
                   ],
                   "responses": [
@@ -979,11 +980,11 @@
                         "rawamba",
                         "Harga kamar Rawamba?",
                         "Fasilitas di Rawamba apa?",
-                        "Kolam renang ada?",
+                        "Kolam renang Rawamba ada?",
                         "Lokasi Rawamba di mana?",
                         "Tiket masuk Rawamba?",
                         "Spot foto di Rawamba?",
-                        "Harga tiket keluarga?"
+                        "Harga tiket Rawamba keluarga?"
                         
                   ],
                   "responses": [
@@ -1007,15 +1008,15 @@
                   "text": [
                         "hotel grand mega guci?",
                         "grand mega guci",
-                        "grand mega",
-                        "Harga kamar Grand Mega?",
-                        "Fasilitas di Grand Mega?",
+                        "grand mega guci",
+                        "Harga kamar grand mega guci?",
+                        "Fasilitas di grand mega guci?",
                         "Kolam renang ada?",
-                        "Lokasi Grand Mega mana?",
-                        "Kamar suite di Mega?",
-                        "Harga villa berapa?",
-                        "Sarapan di Grand Mega?",
-                        "Hotel grand mega bintang berapa?"
+                        "Lokasi grand mega guci mana?",
+                        "Kamar suite di grand mega guci?",
+                        "Harga villa grand mega guci berapa?",
+                        "Sarapan di grand mega guci?",
+                        "Hotel grand mega guci bintang berapa?"
                         
                   ],
                   "responses": [
@@ -1038,20 +1039,20 @@
                   "intent": "lokasi25",
                   "text": [
                         "hotel the onsen?",
-                        "pemandian onsen?",
-                        "penginapan onsen guci",
-                        "onsen guci",
-                        "Harga pemandian Onsen?",
-                        "Fasilitas di Onsen ada?",
-                        "Lokasi Onsen di mana?",
-                        "Spa di Onsen ada?",
-                        "Harga villa di Onsen?",
-                        "Tempat istirahat Onsen?",
+                        "pemandian the onsen?",
+                        "penginapan the onsen guci",
+                        "the onsen guci",
+                        "Harga pemandian the onsen?",
+                        "Fasilitas di the onsen ada?",
+                        "Lokasi the onsen di mana?",
+                        "Spa di the onsen ada?",
+                        "Harga villa di the onsen?",
+                        "Tempat istirahat the onsen?",
                         "Pemandian air panas ada?"
                         
                   ],
                   "responses": [
-                        "The Onsen Guci adalah destinasi wisata dan penginapan yang mengusung konsep pemandian air panas atau onsen yang terletak di kawasan Guci, Kabupaten Tegal, Jawa Tengah. Tempat ini menawarkan pengalaman relaksasi dengan pemandian air panas alami yang berasal dari sumber mata air panas di pegunungan.Fasilitas dan daya tarik The Onsen Guci:Pemandian Air Panas: The Onsen Guci dikenal dengan fasilitas pemandian air panasnya, yang dirancang untuk memberikan relaksasi dan manfaat kesehatan bagi pengunjung. Tersedia berbagai jenis kolam, baik untuk individu maupun kelompok.Penginapan: Menyediakan berbagai jenis akomodasi yang nyaman dengan fasilitas modern. Penginapan ini sering kali terinspirasi dari desain tradisional Jepang, menggabungkan elemen alami dengan kenyamanan.Restoran: Terdapat restoran yang menyajikan berbagai hidangan lokal dan internasional, memungkinkan tamu untuk menikmati makanan lezat selama menginap.Area Bersantai: Dengan pemandangan alam yang indah, The Onsen Guci menyediakan area bersantai yang nyaman, di mana pengunjung bisa menikmati udara segar dan keindahan pegunungan sekitar.Spa dan Layanan Relaksasi: Selain pemandian air panas, tempat ini mungkin juga menawarkan layanan spa dan relaksasi lainnya, seperti pijat dan perawatan tubuh.Biaya masuk dan biaya menginap di The Onsen Guci umumnya: Biaya Masuk Pemandian Air Panas: Sekitar Rp 30.000 s/d Rp 50.000 per orang, tergantung pada fasilitas yang digunakan.Biaya Menginap: Bervariasi tergantung jenis kamar dan fasilitas yang dipilih, mulai dari Rp 500.000 hingga Rp 1.200.000 per malam. <map data-id=25 />"
+                        "The Onsen Guci adalah destinasi wisata dan penginapan yang mengusung konsep pemandian air panas atau the onsen yang terletak di kawasan Guci, Kabupaten Tegal, Jawa Tengah. Tempat ini menawarkan pengalaman relaksasi dengan pemandian air panas alami yang berasal dari sumber mata air panas di pegunungan.Fasilitas dan daya tarik The Onsen Guci:Pemandian Air Panas: The Onsen Guci dikenal dengan fasilitas pemandian air panasnya, yang dirancang untuk memberikan relaksasi dan manfaat kesehatan bagi pengunjung. Tersedia berbagai jenis kolam, baik untuk individu maupun kelompok.Penginapan: Menyediakan berbagai jenis akomodasi yang nyaman dengan fasilitas modern. Penginapan ini sering kali terinspirasi dari desain tradisional Jepang, menggabungkan elemen alami dengan kenyamanan.Restoran: Terdapat restoran yang menyajikan berbagai hidangan lokal dan internasional, memungkinkan tamu untuk menikmati makanan lezat selama menginap.Area Bersantai: Dengan pemandangan alam yang indah, The Onsen Guci menyediakan area bersantai yang nyaman, di mana pengunjung bisa menikmati udara segar dan keindahan pegunungan sekitar.Spa dan Layanan Relaksasi: Selain pemandian air panas, tempat ini mungkin juga menawarkan layanan spa dan relaksasi lainnya, seperti pijat dan perawatan tubuh.Biaya masuk dan biaya menginap di The Onsen Guci umumnya: Biaya Masuk Pemandian Air Panas: Sekitar Rp 30.000 s/d Rp 50.000 per orang, tergantung pada fasilitas yang digunakan.Biaya Menginap: Bervariasi tergantung jenis kamar dan fasilitas yang dipilih, mulai dari Rp 500.000 hingga Rp 1.200.000 per malam. <map data-id=25 />"
                   ],
                   "extension": {
                         "function": "",
@@ -1101,16 +1102,16 @@
             {
                   "intent": "lokasi27",
                   "text": [
-                        "hotel gran dian?",
-                        "gran dian guci?",
+                        "hotel grand dian?",
+                        "grand dian guci?",
                         "grand dian",
                         "Harga kamar Grand Dian?",
                         "Fasilitas di Grand Dian?",
                         "Lokasi Grand Dian mana?",
-                        "Kolam renang ada?",
-                        "Tiket masuk Dian?",
-                        "Kamar suite berapa?",
-                        "Harga sarapan Dian?"
+                        "Kolam renang grand dian?",
+                        "Tiket masuk grand Dian?",
+                        "Kamar suite grand dian berapa?",
+                        "Harga sarapan grand Dian?"
                         
                   ],
                   "responses": [
