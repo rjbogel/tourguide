@@ -6,7 +6,14 @@
                         "Assalamu'alaikum",
                         "mikum",
                         "ass",
-                        "assalamu'alaikum wr.wb"
+                        "assalamu'alaikum wr.wb",
+                        "Selamat pagi",
+                        "Halo, bisa dibantu?",
+                        "Waalaikumsalam",
+                        "Assalamu'alaikum teman",
+                        "Waalaikumussalam",
+                        "Apa kabar?"
+
                   ],
                   "responses": [
                         "Selamat datang di chatboot Wisata guci,saya siap memandu anda untuk rekreasi, silahkan ketikan destinasi yang ingin anda kunjungi",
@@ -31,7 +38,14 @@
                         "tiket masuk guci",
                         "HTM",
                         "tiket",
-                        "biaya"
+                        "biaya",
+                        "Berapa tiket masuk?",
+"Harga tiket hari libur?",
+"Ada diskon tiket?",
+"Cara beli tiket?",
+"Tiket rombongan berapa?",
+"Tiket keluarga ada?"
+
                   ],
                   "responses": [
                         "harga tiket masuk guci pada hari biasa sebesar RP. 10.000, jika hari libur harga tiket masuk guci sebesar Rp. 15.000"
@@ -53,7 +67,16 @@
                   "intent": "Basic3",
                   "text": [
                         "rekomendasi wisata terbaik di guci",
-                        "apa saja wisata terbaik di guci"
+                        "apa saja wisata terbaik di guci",
+                        "Tempat wisata bagus?",
+                        "Wisata air panas mana?",
+                        "Objek wisata populer?",
+                        "Tempat terbaik selfie?",
+                        "Destinasi hits guci?",
+                        "Aktivitas outdoor apa?",
+                        "Relaksasi di guci?",
+                        "Wisata air seru?"
+
                   ],
                   "responses": [
                         "rekomendasi apa yang kamu inginkan? Apakah kamu mau mandi air panas atau nongkrong atau menginap di hotel, tuliskan nama destinasi di guci"
@@ -75,7 +98,16 @@
                   "intent": "Basic4",
                   "text": [
                         "hallo",
-                        "halo"
+                        "halo",
+                        "Hai!",
+                        "Halo, bisa dibantu?",
+                        "Selamat siang!",
+                        "Gimana kabarnya?",
+                        "Hai, ada apa di guci?",
+                        "Hallo, kabar baik?",
+                        "Halo guci!",
+                        "Salam kenal!"
+
                   ],
                   "responses": [
                         "hallo , ada yang bisa kami bantu?tolong ketikan apa yang anda hendak kunjungi di objek wisata guci "
@@ -98,7 +130,15 @@
                   "text": [
                         "apa kabar?",
                         "bagaimana kabarmu?",
-                        "bagaimana hari ini?"
+                        "bagaimana hari ini?",
+                        "Gimana kabarnya?",
+                        "Baik-baik saja?",
+                        "Cuaca cerah di guci?",
+                        "Sehat selalu ya?",
+                        "Senang bertemu!",
+                        "Suasana di guci?",
+                        "Kamu baik?"
+
                   ],
                   "responses": [
                         "Alhamdulillah baik, bagaimana kabarmu? Semoga baik- baik saja. tolong ketikan apa yang anda hendak kunjungi di objek wisata guci"
@@ -120,7 +160,16 @@
                   "intent": "Basic6",
                   "text": [
                         "start",
-                        "mulai"
+                        "mulai",
+                        "Ayo mulai!",
+                        "Siap untuk tur?",
+                        "Mulai eksplorasi guci",
+                        "Wisata dimulai sekarang",
+                        "Panduan perjalanan",
+                        "Mulai tur di guci",
+                        "Siap mulai petualangan",
+                        "Wisata guci dimulai"
+
                   ],
                   "responses": [
                         "selamat datang wisata objek wisata guci tegal yang berbahagia.tolong ketikan apa yang anda hendak kunjungi di objek wisata guci "
@@ -142,7 +191,16 @@
                   "intent": "Basic7",
                   "text": [
                         "saya butuh bantuan",
-                        "tolong bantu saya"
+                        "tolong bantu saya",
+                        "Saya butuh bantuan!",
+                        "Ada yang bisa bantu?",
+                        "Tolong arahkan saya",
+                        "Butuh panduan wisata",
+                        "Bingung, tolong bantu",
+                        "Saya tersesat, tolong",
+                        "Butuh info wisata",
+                        "Bantuan perjalanan guci"
+    
                   ],
                   "responses": [
                         "jika anda bingung hendak ke mana, kami siap memandu perjalanan anda,tolong ketikan apa yang anda hendak kunjungi di objek wisata guci "
@@ -164,7 +222,17 @@
                   "intent": "Basic8",
                   "text": [
                         "hai",
-                        "hay"
+                        "hay",
+                        "Halo, apa kabar?",
+                        "Hai, ada apa?",
+                        "Hai, guci!",
+                        "Halo, siap tur?",
+                        "Hai, tolong pandu",
+                        "Selamat datang guci",
+                        "Siap untuk wisata?",
+                        "Hai, tempat wisata?"
+
+
                   ],
                   "responses": [
                         "kami akan senantiasa memandu perjalanan anda untuk menuju destinasi yang hendak anda kunjungi,tolong ketikan apa yang anda hendak kunjungi di objek wisata guci "
@@ -190,7 +258,12 @@
                         "stop",
                         "cukup",
                         "sudah",
-                        "ok"
+                        "Oke, terima kasih",
+                        "Saya selesai",
+                        "Sudah cukup, makasih",
+                        "Terima kasih banyak",
+                        "Sampai jumpa!"
+
                   ],
                   "responses": [
                         "semoga selamat sampai tujuan, pastikan hati anda selalu bahagia ,jangan lupa have fun bersama kami tour guide asisstant objek wisata guci, guci mbetahi lan ngangeni, Terimasih dan selamat berwisata. "
@@ -214,7 +287,14 @@
                         "kolam renang barokah?",
                         "hotel barokah?",
                         "barokah guci",
-                        "lokasi barokah guci"
+                        "lokasi barokah guci",
+                        "Tiket masuk barokah?",
+                        "Rute ke barokah?",
+                        "Fasilitas kolam barokah?",
+                        "Jam buka barokah?",
+                        "Apa di hotel barokah?",
+                        "Kolam renang nyaman?"
+
                   ],
                   "responses": [
                         "Kolam renang barokah ini bisa menjadi Alternatif bagi anda yg ingin lebih nyaman menikmati pemandian air panas jika pemandian umum sudah cukup padat, untuk tiket masuk cukup murah hanya 10rb bagi dewasa dan 5 Rb bagi anak anak untuk tempat cukup strategis berhadap hadapan persis dengan pintu masuk pemandian umum pancuran 13. <map data-id=1 />"
@@ -238,7 +318,14 @@
                         "hotel joglo ageng?",
                         "hotel termewah di guci?",
                         "joglo ageng",
-                        "tiktok guci"
+                        "viral tiktok guci",
+                        "Berapa harga joglo?",
+                        "Fasilitas joglo apa?",
+                        "Tarif per malam joglo?",
+                        "Lokasi joglo ageng?",
+                        "Bintang hotel joglo?",
+                        "Joglo punya kolam?"
+
                   ],
                   "responses": [
                         "hotel joglo ageng berlokasi sempurna untuk menjelajahi ativitas dan aktrasi alam di area ini , atau untuk sekedar bersantai di lingkungan yang menyenangan dan ketenangan yang mendalam, resor ini mengalir dari mata airnya yang hangat hingga kolam renangnya yang megah. hotel ini merupakan salah satu hotel bintang 4 yang terletak di objek wisata guci, dengan biaya penginapan mulai dari 2jt permalam. <map data-id=2 />"
@@ -262,7 +349,14 @@
                         "hotel  sun q ta ?",
                         "water boom sunq ta?",
                         "penginapan sun q ta?",
-                        "sunQta"
+                        "sunQta",
+                        "Harga kamar Sun Q?",
+                        "Kolam air panas ada?",
+                        "Lokasi Sun Q mana?",
+                        "Fasilitas Sun Q apa?",
+                        "Cocok untuk keluarga?",
+                        "Akses ke Sun Q?"
+
                   ],
                   "responses": [
                         "Hotel Sun Q Ta Guci adalah salah satu pilihan akomodasi yang terletak di daerah wisata Guci, Kabupaten Tegal. Hotel ini menawarkan berbagai fasilitas seperti kolam renang, termasuk kolam air panas outdoor yang cocok dinikmati di tengah cuaca dingin pegunungan. Selain itu, tersedia pula layanan pijat untuk relaksasi. Hotel ini sangat cocok untuk liburan keluarga, karena dekat dengan berbagai tempat wisata seperti Curug Kaliputih dan Golden Park Guci. Harga per malam di hotel ini bervariasi tergantung pada tipe kamar dan musim. Sebagai gambaran, harga kamar dimulai dari sekitar Rp 600.000 per malam. <map data-id=3 />"
@@ -285,7 +379,15 @@
                   "text": [
                         "hotel duta wisata?",
                         "penginapan duta wisata?",
-                        "duta wisata guci"
+                        "duta wisata guci",
+                        "Harga kamar Duta?",
+                        "Kolam air panas ada?",
+                        "Lokasi Duta mana?",
+                        "Fasilitas restoran ada?",
+                        "Kamar termurah Duta?",
+                        "Fasilitas hotel Duta?",
+                        "Diskon Duta ada?"
+
                   ],
                   "responses": [
                         "Hotel Duta Wisata Guci terletak di kawasan wisata Guci, Tegal, yang terkenal dengan pemandian air panasnya. Hotel ini menawarkan pemandangan alam yang indah dengan udara sejuk khas pegunungan. Duta Wisata memiliki beragam tipe kamar, mulai dari Standard Room seharga Rp330.000 per malam hingga Governor Room yang tarifnya mencapai Rp759.500 per malam. <map data-id=4 />"
@@ -308,7 +410,15 @@
                   "text": [
                         "hotel guci ashafana?",
                         "pemandian guci ashafana?",
-                        "guci ashafana"
+                        "guci ashafana",
+                        "Berapa tarif Ashafana?",
+                        "Fasilitas di Ashafana?",
+                        "Lokasi guci Ashafana?",
+                        "Kolam air panas Ashafana?",
+                        "Glamping di Ashafana?",
+                        "Villa Ashafana ada?",
+                        "Ashafana cocok keluarga?"
+
                   ],
                   "responses": [
                         "Guci Ashafana Resort di Tegal adalah destinasi penginapan yang menawarkan berbagai pilihan akomodasi, seperti villa, glamping, dan bumi perkemahan. Lokasinya berada di tengah hutan pinus di kaki Gunung Slamet, memberikan suasana sejuk dan alami. Fasilitas yang tersedia mencakup kolam renang air panas alami, resto, area outbound, serta tempat untuk hiking ke Curug Jedor.Tipe penginapan yang tersedia antara lain,Villa Pinus dengan kapasitas besar, cocok untuk keluarga atau rombongan.Saung Bambu dengan nuansa tradisional, cocok untuk 2-7 orang.Glamping untuk tamu hingga 15 orang, dilengkapi dengan karaoke dan fasilitas barbeku.Harga per malam bervariasi. <map data-id=5 />"
@@ -333,7 +443,14 @@
                         "pemandian air panas guci",
                         "pemandian air panas",
                         "rekomendasi pemandian air panas",
-                        "pancuran 13"
+                        "pancuran 13",
+                        "Pancuran 13 di mana?",
+                        "Berapa harga pancuran?",
+                        "Manfaat air panas apa?",
+                        "Pancuran 13 ramai?",
+                        "Jam buka pancuran 13?",
+                        "Fasilitas di pancuran?"
+
                   ],
                   "responses": [
                         "Pancuran 13 atau sering disebut TWA Guci adalah salah satu tempat wisata pemandian air panas terkenal di kawasan Guci, Tegal. Tempat ini menjadi daya tarik utama karena menyediakan pancuran air panas alami yang dipercaya memiliki manfaat kesehatan, terutama untuk meredakan pegal-pegal dan penyakit kulit. Pancuran ini berjumlah 13, dengan air yang bersumber langsung dari Gunung Slamet.Lokasi Pancuran 13 berada di area yang cukup tinggi, memberikan sensasi relaksasi dengan pemandangan pegunungan. Suhu air di pancuran ini bisa mencapai 40-50 derajat Celsius, yang ideal untuk merendam tubuh. Selain itu, fasilitas lain seperti kolam renang air panas, tempat istirahat, dan kantin juga tersedia untuk kenyamanan pengunjung. TWA Guci merupakan pengelola dari area ini, termasuk beberapa penginapan dan villa di sekitar lokasi. Biaya masuk ke Pancuran 13 relatif terjangkau, dan sering menjadi pilihan wisata bagi keluarga atau rombongan yang ingin menikmati pemandian air panas dan alam pegunungan. <map data-id=6 />"
@@ -356,7 +473,15 @@
                   "text": [
                         "hotel guciku?",
                         "water boom guciku?",
-                        "water boom"
+                        "water boom",
+                        "Fasilitas di Guciku apa?",
+                        "Harga tiket Guciku?",
+                        "Lokasi Guciku mana?",
+                        "Kolam renang Guciku ada?",
+                        "Ada hotel di Guciku?",
+                        "Water boom buka kapan?",
+                        "Cocok untuk keluarga?"
+
                   ],
                   "responses": [
                         "Hot Water Boom Guciku adalah salah satu taman rekreasi air panas terbesar di kawasan wisata Guci, Tegal, Jawa Tengah. Taman ini menawarkan berbagai fasilitas kolam renang dengan air panas alami yang bersumber dari Gunung Slamet. Selain kolam renang air panas untuk dewasa dan anak-anak, Guciku juga dilengkapi dengan seluncuran air yang menambah keseruan bagi pengunjung.Fasilitas lain yang tersedia di Guciku meliputi restoran, area piknik, dan penginapan seperti hotel, villa, serta cottage yang bisa disewa untuk menginap. Taman ini cocok untuk liburan keluarga yang ingin menikmati suasana pegunungan dengan relaksasi di kolam air panas.Harga tiket masuk ke Hot Water Boom Guciku cukup terjangkau, biasanya sekitar Rp 20.000 hingga Rp 40.000 per orang, tergantung hari biasa atau akhir pekan. <map data-id=7 />"
@@ -379,7 +504,15 @@
                   "text": [
                         "hotel guci gung?",
                         "penginapan guci gung?",
-                        "guci gung"
+                        "guci gung",
+                        "Kolam renang di Gung?",
+                        "Harga tiket Guci Gung?",
+                        "Fasilitas di Guci Gung?",
+                        "Guci Gung buka kapan?",
+                        "Lokasi Guci Gung mana?",
+                        "Ada gazebo di Gung?",
+                        "Tiket anak di Gung?"
+
                   ],
                   "responses": [
                         "Guci Gung merupakan salah satu kolam renang air panas di kawasan wisata Guci, Tegal. Terletak sekitar 1 km dari jalan lingkar barat objek wisata Guci, kolam ini menawarkan fasilitas seperti kolam renang untuk dewasa dan anak-anak, toilet, perosotan, ban pelampung, gazebo, dan kursi di pinggir kolam. Tempat ini cocok untuk keluarga yang ingin menikmati relaksasi dengan suasana yang nyaman dan bersih.Untuk tiket masuk, harganya cukup terjangkau, yaitu sekitar Rp 15.000 per orang. Kolam renang ini juga terkenal karena kebersihannya, menjadikannya pilihan menarik untuk berwisata air panas di area Guci. <map data-id=8 />"
@@ -402,7 +535,15 @@
                   "text": [
                         "hotel salma?",
                         "cafe salma guci?",
-                        "salma"
+                        "salma",
+                        "Harga villa di Salma?",
+                        "Fasilitas hotel Salma apa?",
+                        "Lokasi Salma di guci?",
+                        "Ada kolam renang Salma?",
+                        "Sarapan di Salma ada?",
+                        "Villa Salma cocok keluarga?",
+                        "Harga kamar termurah?"
+
                   ],
                   "responses": [
                         "Salma Resort Guci di Tegal merupakan salah satu akomodasi yang menawarkan pengalaman menginap dengan pemandangan perbukitan hijau dan udara sejuk khas daerah Guci. Resort ini memiliki berbagai tipe penginapan, termasuk villa dan kamar hotel yang cocok untuk keluarga maupun pasangan.Ada beberapa pilihan akomodasi di Salma Resort:Villa Tipe A (kapasitas 10 orang): Rp 2,5 juta/malam saat akhir pekan, dan Rp 2 juta/malam pada hari biasa. Fasilitas meliputi 2 kamar tidur, 2 kamar mandi, dapur, ruang keluarga, serta akses langsung ke kolam renang air hangat.Villa Tipe B (kapasitas 6 orang): Rp 1,5 juta/malam saat akhir pekan, dan Rp 1,3 juta/malam pada hari biasa. Villa ini memiliki 1 kamar tidur, 2 kamar mandi, dan fasilitas serupa dengan tipe A.Kamar Hotel Double Bed: Rp 1,2 juta/malam.Kamar Hotel Single Bed: Rp 1,05 juta/malam.Harga tersebut sudah termasuk sarapan untuk dua orang. Fasilitas tambahan yang bisa dinikmati antara lain kolam renang air hangat dengan desain unik berbentuk poci, restoran, dan area parkir yang luas. <map data-id=9 />"
@@ -425,7 +566,15 @@
                   "text": [
                         "wisata rindu alam?",
                         "pemandian rindu alam?",
-                        "rindu alam"
+                        "rindu alam",
+                        "Tiket masuk Rindu Alam?",
+                        "Fasilitas di Rindu Alam?",
+                        "Kolam renang di sana?",
+                        "Jam buka Rindu Alam?",
+                        "Rute ke Rindu Alam?",
+                        "Area camping di sana?",
+                        "Cocok untuk keluarga?"
+
                   ],
                   "responses": [
                         "Rindu Alam adalah salah satu destinasi wisata yang berada di kawasan Guci, Kabupaten Tegal, Jawa Tengah. Tempat ini dikenal dengan pemandangan alamnya yang asri dan udara yang sejuk karena terletak di kaki Gunung Slamet. Rindu Alam menawarkan berbagai fasilitas seperti taman bermain, kolam renang air hangat, area perkemahan, dan spot foto yang menarik.Untuk biaya masuk Rindu Alam Guci, biasanya harga tiket berkisar sebagai berikut:Hari biasa: Rp 15.000 s/d Rp 20.000 per orangAkhir pekan atau hari libur: Rp 20.000 s/d Rp 25.000 per orang, Biaya ini dapat bervariasi tergantung pada kebijakan pengelola dan waktu kunjungan. Selain tiket masuk, ada juga biaya tambahan untuk beberapa fasilitas tertentu, seperti parkir kendaraan atau wahana di dalam area wisata. <map data-id=10 />"
@@ -450,7 +599,15 @@
                         "pemandian guci forest?",
                         "guci forest",
                         "pemandian pinusan",
-                        "camping ground"
+                        "camping ground",
+                        "Glamping di Guci Forest?",
+                        "Tiket masuk Forest berapa?",
+                        "Jembatan gantung ada?",
+                        "Aktivitas di Guci Forest?",
+                        "Kafe di Forest mana?",
+                        "Spot foto di Forest?",
+                        "Jam buka Guci Forest?"
+
                   ],
                   "responses": [
                         "Guci Forest adalah destinasi wisata alam yang berada di kawasan Guci, Tegal, Jawa Tengah. Tempat ini menawarkan pengalaman wisata hutan yang asri dengan pemandangan alam yang indah serta udara sejuk khas pegunungan. Dikelilingi oleh pepohonan pinus dan dekat dengan Gunung Slamet, Guci Forest menjadi pilihan favorit untuk wisatawan yang ingin bersantai, menikmati alam, dan mencari spot foto yang instagramable.Di Guci Forest, pengunjung bisa menemukan berbagai fasilitas seperti:Spot foto unik dan menarik dengan latar alam.Area kemping,Glamping (glamorous camping) dengan fasilitas tenda yang nyaman.Jembatan gantung yang instagramable.Kafe atau tempat makan dengan nuansa alam.Guci Forest juga sering digunakan sebagai tempat untuk kegiatan outdoor seperti gathering, kemah keluarga, atau sekadar bersantai di tengah alam.Untuk biaya masuk Guci Forest, biasanya harga tiket masuk berkisar antara:Hari biasa: Rp 10.000 – Rp 15.000 per orang .Akhir pekan atau hari libur: Rp 15.000 – Rp 25.000 per orang.Harga bisa berbeda tergantung pada fasilitas yang digunakan, terutama jika pengunjung ingin mencoba pengalaman glamping atau menggunakan fasilitas tambahan lainnya. <map data-id=11 />"
@@ -474,7 +631,14 @@
                         "hotel baron hill?",
                         "spot foto guci?",
                         "jembatan kaca guci?",
-                        "fyp ig"
+                        "Tiket masuk Baron Hill?",
+                        "Aktivitas di Baron Hill?",
+                        "Fasilitas di Baron Hill?",
+                        "Spot foto di Baron?",
+                        "Berapa harga tiketnya?",
+                        "Pemandangan terbaik di Baron?",
+                        "Baron Hill buka kapan?"
+
                   ],
                   "responses": [
                         "Baron Hill Guci adalah salah satu destinasi wisata di kawasan Guci, yang terletak di Kabupaten Tegal, Jawa Tengah, Indonesia. Tempat ini dikenal dengan keindahan alamnya, terutama pemandangan perbukitan dan suasana yang sejuk. Berikut beberapa informasi yang mungkin bermanfaat tentang Baron Hill Guci:Pemandangan Alam: Baron Hill Guci menawarkan pemandangan yang menakjubkan dari ketinggian, dengan latar belakang pegunungan dan hutan yang hijau.Aktivitas Wisata: Anda bisa melakukan berbagai aktivitas seperti hiking, berfoto dengan latar belakang pemandangan yang indah, atau sekadar bersantai menikmati udara segar.Aksesibilitas: Lokasi ini bisa diakses melalui perjalanan darat dari pusat kota Tegal. Perjalanan menuju Baron Hill Guci biasanya melibatkan jalan yang berbukit dan berbatu.Fasilitas: Fasilitas di sekitar Baron Hill mungkin terbatas, jadi sebaiknya membawa perlengkapan yang diperlukan dan memeriksa kondisi cuaca sebelum berkunjung.Kegiatan Lain: Selain menikmati pemandangan, Anda juga bisa mengeksplorasi area sekitar Guci yang terkenal dengan pemandian air panas. Harga tiket masuk ke Baron Hill Guci dapat bervariasi tergantung pada kebijakan pengelola dan waktu kunjungan. Namun, informasi spesifik tentang harga tiket bisa sulit ditemukan karena sering diperbarui atau bervariasi. Secara umum, tiket masuk ke destinasi wisata seperti Baron Hill Guci biasanya berkisar antara Rp10.000 hingga Rp30.000 per orang. <map data-id=12 />"
@@ -498,7 +662,15 @@
                         "hotel golden park?",
                         "prosotan warna warni?",
                         "spot foto guci",
-                        "tempat bagus buat konten di guci"
+                        "tempat bagus buat konten di guci",
+                        "Tiket masuk Golden Park?",
+                        "Fasilitas di Golden Park?",
+                        "Wahana di Golden Park?",
+                        "Kolam renang Golden Park?",
+                        "Tempat piknik di sana?",
+                        "Harga tiket keluarga?",
+                        "Tempat bermain anak?"
+
                   ],
                   "responses": [
                         "Golden Park Guci adalah salah satu destinasi wisata terbaru yang berada di kawasan wisata Guci, Tegal, Jawa Tengah. Tempat ini menawarkan pengalaman wisata yang memadukan keindahan alam dengan beragam wahana rekreasi yang cocok untuk keluarga. Terletak di area yang sejuk di kaki Gunung Slamet, Golden Park memberikan suasana yang menyegarkan bagi para pengunjung. Fasilitas dan wahana di Golden Park Guci: Kolam renang air hangat: Salah satu daya tarik utama di Guci adalah pemandian air hangat alami, dan Golden Park juga menyediakan fasilitas kolam renang dengan air hangat yang nyaman.Spot foto instagramable: Terdapat berbagai spot foto menarik dengan latar belakang alam yang cantik, seperti taman bunga, jembatan gantung, dan instalasi seni.Taman bermain anak: Golden Park memiliki area yang ramah anak dengan wahana permainan yang cocok untuk keluarga.Area piknik: Pengunjung juga bisa menikmati waktu bersantai di area hijau yang disediakan untuk piknik.Cafeteria: Tersedia tempat makan dan kafe yang menyajikan berbagai makanan dan minuman.Biaya masuk ke Golden Park Guci umumnya berkisar sebagai berikut:Hari biasa: Rp 20.000 sd Rp 30.000 per orang. Akhir pekan atau hari libur: Rp 30.000 s/d Rp 40.000 per orang. <map data-id=13 />"
@@ -522,7 +694,14 @@
                         "curug serwiti?",
                         "serwiti guci?",
                         "air terjun guci",
-                        "wisata viral guci"
+                        "wisata viral guci",
+                        "Harga tiket Curug Serwiti?",
+                        "Lokasi Curug Serwiti?",
+                        "Akses menuju Curug Serwiti?",
+                        "Fasilitas di Serwiti?",
+                        "Berapa tinggi curugnya?",
+                        "Jam buka curug?",
+                        "Spot foto di Serwiti?"
                   ],
                   "responses": [
                         "Curug Serwiti adalah salah satu air terjun tersembunyi di kawasan wisata Guci, Kabupaten Tegal, Jawa Tengah. Air terjun ini menawarkan keindahan alam yang alami dan suasana yang tenang, cocok untuk pengunjung yang ingin menjauh sejenak dari keramaian dan menikmati keasrian alam. Dengan dikelilingi oleh pepohonan hijau dan suasana pegunungan yang sejuk, Curug Serwiti menjadi tempat favorit bagi para pecinta alam dan petualang.Ciri khas Curug Serwiti:Air terjun ini memiliki ketinggian sedang dengan aliran air yang jernih, menyegarkan, dan cocok untuk bermain air atau sekadar bersantai di tepi sungai.Tempat ini belum banyak diketahui, sehingga menawarkan pengalaman yang lebih privat dan alami dibandingkan dengan lokasi wisata lain yang lebih populer di Guci. Akses ke Curug Serwiti memerlukan sedikit trekking melalui jalur hutan yang menambah pengalaman petualangan tersendiri.Biaya masuk ke Curug Serwiti biasanya masih sangat terjangkau, sering kali dalam bentuk sumbangan sukarela atau tiket masuk yang murah, sekitar: Rp 5.000 s/d Rp 10.000 per orang. <map data-id=14 />"
@@ -545,7 +724,15 @@
                   "text": [
                         "hotel the geong?",
                         "spot foto guci?",
-                        "the geong"
+                        "the geong",
+                        "Tiket masuk The Geong?",
+                        "Spot foto di Geong?",
+                        "Fasilitas di Geong apa?",
+                        "Glamping di Geong ada?",
+                        "Pemandangan The Geong?",
+                        "Hiking di Geong mana?",
+                        "Jam buka The Geong?"
+
                   ],
                   "responses": [
                         "The Geong Guci adalah salah satu destinasi wisata alam yang menonjol di kawasan wisata Guci, Tegal, Jawa Tengah. Tempat ini terkenal karena lokasinya yang berada di ketinggian, menawarkan pemandangan alam yang luar biasa indah dari atas. The Geong memiliki daya tarik utama berupa gardu pandang yang memberikan pengunjung pengalaman melihat panorama alam Guci yang luas, termasuk pemandangan Gunung Slamet dan hutan hijau di sekitarnya. Fasilitas dan daya tarik The Geong Guci: Gardu pandang: Menjadi spot favorit untuk menikmati matahari terbit atau terbenam dengan latar pegunungan yang indah. Spot foto: Banyak spot foto instagramable dengan latar alam yang cantik, seperti ayunan di atas bukit, jembatan gantung, dan platform foto di tebing.Glamping (glamorous camping): Bagi yang ingin menginap, tersedia fasilitas glamping dengan tenda mewah dan nyaman, lengkap dengan pemandangan langsung ke alam terbuka. Jalur trekking: The Geong juga cocok untuk aktivitas outdoor seperti trekking atau hiking dengan jalur yang menawarkan tantangan ringan hingga sedang. Cafeteria atau warung: Menyediakan makanan dan minuman untuk pengunjung yang ingin bersantai sambil menikmati pemandangan. Biaya masuk ke The Geong Guci biasanya berkisar: Hari biasa: Rp 10.000 s/d Rp 15.000 per orang .Akhir pekan atau hari libur: Rp 20.000 s/d Rp 25.000 per orang. <map data-id=15 />"
@@ -567,7 +754,17 @@
                   "intent": "lokasi16",
                   "text": [
                         "graha tirta ayu?",
-                        "GTA?"
+                        "GTA?",
+                        "Lokasi Graha Tirta mana?",
+                        "Kolam air panas ada?",
+                        "Fasilitas di Graha apa?",
+                        "Harga masuk Graha Tirta?",
+                        "Area piknik Graha ada?",
+                        "Tempat nginap di sana?",
+                        "Aktivitas di Graha apa?",
+                        "Rute menuju Graha Tirta?"
+
+
                   ],
                   "responses": [
                         "Graha Tirta Ayu Guci adalah salah satu penginapan dan pemandian air panas di kawasan wisata Guci, Kabupaten Tegal, Jawa Tengah. Tempat ini menawarkan fasilitas penginapan yang nyaman serta kolam air panas alami, yang menjadi daya tarik utama bagi wisatawan yang ingin menikmati liburan yang rileks dan menyegarkan. Lokasinya yang dekat dengan pegunungan memberikan udara sejuk dan pemandangan alam yang indah.Fasilitas di Graha Tirta Ayu Guci: Kolam pemandian air panas: Air panas alami yang terkenal di Guci dipercaya memiliki manfaat kesehatan, terutama untuk relaksasi otot dan penyembuhan.Penginapan: Menyediakan berbagai jenis kamar dan villa yang dilengkapi dengan fasilitas modern, cocok untuk keluarga maupun pasangan. Area bersantai: Tersedia area untuk bersantai sambil menikmati pemandangan alam sekitar.Restoran atau kafe: Menyediakan makanan dan minuman untuk para tamu yang menginap atau hanya berkunjung ke kolam pemandian.Fasilitas meeting atau gathering: Bagi pengunjung yang ingin mengadakan acara kelompok atau pertemuan, Graha Tirta Ayu juga menawarkan fasilitas tersebut. Biaya masuk atau pemandian air panas: Hari biasa: Sekitar Rp 15.000 s/d Rp 25.000 per orang. Akhir pekan atau hari libur: Bisa mencapai Rp 30.000 s/d Rp 40.000 per orang. Biaya menginap di penginapan Graha Tirta Ayu bervariasi tergantung jenis kamar atau villa yang dipilih. <map data-id=16 />"
@@ -591,7 +788,15 @@
                         "hotel kampung guci?",
                         "kampung  guci",
                         "penginapan kampung guci?",
-                        "paling sering dikunjungi di guci"
+                        "paling sering dikunjungi di guci",
+                        "Fasilitas di Kampung apa?",
+                        "Kolam renang di sana?",
+                        "Harga tiket masuk?",
+                        "Aktivitas di Kampung Goetci?",
+                        "Ada tempat nginap?",
+                        "Spot foto di Goetci?",
+                        "Harga penginapan berapa?"
+                        
                   ],
                   "responses": [
                         "Kampung Goetci adalah destinasi wisata unik di kawasan Guci, Kabupaten Tegal, Jawa Tengah, yang menggabungkan konsep wisata pedesaan dengan pengalaman modern. Tempat ini menawarkan suasana khas pedesaan di pegunungan dengan pemandangan alam yang indah, udara segar, dan fasilitas yang ramah bagi keluarga maupun wisatawan yang ingin bersantai dan menikmati ketenangan.Fasilitas dan daya tarik Kampung Goetci Guci: Penginapan berkonsep tradisional: Kampung Goetci menyediakan berbagai jenis penginapan bergaya tradisional dengan desain yang mengingatkan pada rumah-rumah pedesaan, namun dilengkapi dengan fasilitas modern. Penginapan ini cocok untuk keluarga atau kelompok yang ingin merasakan suasana desa di pegunungan.Kolam renang air hangat: Salah satu daya tarik utamanya adalah kolam renang dengan air panas alami, yang berasal dari sumber air panas di Guci, cocok untuk relaksasi.Spot foto instagramable: Kampung Goetci memiliki banyak spot foto yang menarik dengan latar belakang alam pegunungan dan desain pedesaan yang otentik.Area bermain anak dan keluarga: Ada berbagai fasilitas rekreasi yang ramah anak dan keluarga, seperti taman bermain dan area untuk aktivitas outdoor.Restoran dengan nuansa pedesaan: Pengunjung bisa menikmati makanan tradisional dan modern di restoran yang berlokasi di tengah suasana pedesaan.Aktivitas pedesaan: Wisatawan bisa berpartisipasi dalam berbagai aktivitas khas pedesaan, seperti bercocok tanam, menikmati pemandangan sawah, atau sekadar berjalan-jalan di sekitar desa.Biaya masuk ke Kampung Goetci biasanya berkisar:Hari biasa: Rp 20.000 – Rp 30.000 per orang.Akhir pekan atau hari libur: Rp 30.000 – Rp 40.000 per orang. Biaya penginapan: Bervariasi tergantung jenis kamar atau villa yang dipilih, dengan harga mulai dari Rp 500.000 per malam, tergantung fasilitas yang disediakan. <map data-id=17 />"
@@ -613,7 +818,16 @@
                   "intent": "lokasi18",
                   "text": [
                         "shtepine cafe?",
-                        "cafe guci"
+                        "cafe guci",
+                        "Harga makanan di Shtepine?",
+                        "Fasilitas di kafe mana?",
+                        "Menu favorit di Shtepine?",
+                        "Lokasi Shtepine mana?",
+                        "Suasana Shtepine kafe?",
+                        "Tempat duduk outdoor?",
+                        "Area foto Shtepine?",
+                        "Kafe buka jam berapa?"
+                        
                   ],
                   "responses": [
                         "Shtepine Café Guci adalah kafe dengan konsep unik dan suasana yang nyaman yang berada di kawasan wisata Guci, Kabupaten Tegal, Jawa Tengah. Kafe ini menjadi salah satu tempat favorit bagi wisatawan yang ingin bersantai sambil menikmati pemandangan alam pegunungan yang indah. Dengan udara sejuk dan lingkungan yang asri, Shtepine Café menawarkan pengalaman bersantai yang menyenangkan, baik untuk keluarga, pasangan, maupun wisatawan solo(sendirian).Daya tarik dan fasilitas di Shtepine Café Guci:Desain kafe yang Instagramable: Kafe ini mengusung konsep desain yang menarik dan modern, dengan banyak spot foto yang cocok untuk diabadikan di media sosial. Dekorasi kafe memadukan elemen tradisional dan modern, memberikan suasana yang hangat dan nyaman.Pemandangan alam: Berlokasi di dataran tinggi, pengunjung dapat menikmati panorama alam Gunung Slamet dan hutan hijau di sekitarnya dari area tempat duduk outdoor yang disediakan.Menu makanan dan minuman: Shtepine Café menawarkan berbagai menu, mulai dari makanan ringan hingga makanan berat. Minuman seperti kopi, teh, dan berbagai minuman segar lainnya menjadi andalan di sini, ditambah dengan makanan lokal dan internasional.Suasana cozy dan nyaman: Kafe ini cocok untuk menghabiskan waktu berjam-jam dengan suasana tenang, dilengkapi dengan musik santai dan tempat duduk yang nyaman, baik di dalam ruangan maupun di luar.Area outdoor dan indoor: Pengunjung bisa memilih untuk duduk di area outdoor yang menawarkan pemandangan langsung ke alam atau di area indoor dengan nuansa hangat dan nyaman.Akses Wi-Fi dan tempat kerja: Shtepine Café juga menyediakan Wi-Fi yang membuatnya ideal bagi para digital nomad atau wisatawan yang ingin bekerja sambil menikmati suasana pegunungan.Harga menu di Shtepine Café Guci umumnya terjangkau, dengan harga makanan dan minuman mulai dari Rp 20.000 hingga Rp 50.000, tergantung pilihan menu.Kafe ini cocok bagi mereka yang ingin menikmati suasana alam sambil bersantai, baik untuk mengobrol, bekerja, maupun sekadar menikmati secangkir kopi di udara pegunungan yang sejuk. <map data-id=18 />"
@@ -637,7 +851,15 @@
                         "cafe g'bugs shelter?",
                         "gubug selter",
                         "kafe guci",
-                        "tempat nongkrong diguci"
+                        "tempat nongkrong diguci",
+                        "Harga tenda di G'Bugs?",
+                        "Fasilitas di G'Bugs apa?",
+                        "Spot foto di G'Bugs?",
+                        "Kafe di G'Bugs ada?",
+                        "Tempat camping ada?",
+                        "Jam buka G'Bugs kapan?",
+                        "Aktivitas di G'Bugs apa?"
+                        
                   ],
                   "responses": [
                         "G'Bugs Shelter Guci adalah destinasi wisata berkonsep alam yang terletak di kawasan wisata Guci, Kabupaten Tegal, Jawa Tengah. Tempat ini menawarkan pengalaman menginap dan beraktivitas di alam terbuka, yang cocok untuk pengunjung yang ingin menikmati suasana alam pegunungan sambil merasakan petualangan ringan. Dengan konsep shelter dan camping, G'Bugs Shelter menghadirkan suasana yang unik dan nyaman untuk wisatawan yang mencari suasana berbeda di kawasan Guci. Fasilitas dan daya tarik G'Bugs Shelter Guci:Camping & Glamping: G'Bugs Shelter menyediakan area untuk berkemah dan glamping (glamorous camping) dengan fasilitas yang nyaman, termasuk tenda-tenda yang sudah dilengkapi dengan kasur, bantal, dan perlengkapan lainnya untuk memberikan pengalaman menginap yang menyenangkan di tengah alam.Spot foto menarik: Dikelilingi oleh pemandangan alam yang asri, G'Bugs Shelter memiliki banyak spot foto yang cocok untuk diabadikan, baik untuk koleksi pribadi maupun media sosial.Suasana hutan pegunungan: Terletak di dataran tinggi dekat dengan Gunung Slamet, tempat ini menawarkan udara sejuk dengan pemandangan pepohonan hijau dan alam yang tenang, jauh dari hiruk pikuk kota.Area outdoor untuk aktivitas: G'Bugs Shelter juga menyediakan area yang luas untuk aktivitas luar ruangan seperti trekking, hiking, atau sekadar berjalan-jalan menikmati alam sekitar.Kafe & tempat bersantai: Ada kafe kecil di area ini yang menyediakan makanan dan minuman sederhana, sehingga pengunjung dapat menikmati kopi atau teh sambil menikmati suasana alam.Api unggun: Untuk menambah keseruan di malam hari, G'Bugs Shelter menyediakan fasilitas api unggun yang bisa dinikmati bersama teman atau keluarga.Biaya menginap di G'Bugs Shelter Guci bervariasi tergantung jenis akomodasi yang dipilih,Camping: Mulai dari Rp 100.000 s/d Rp 200.000 per malam (tergantung fasilitas tenda). Glamping: Sekitar Rp 300.000 s/d Rp 500.000 per malam, tergantung ukuran tenda dan fasilitas yang disediakan.G'Bugs Shelter cocok untuk wisatawan yang ingin menikmati suasana alam pegunungan sambil berkemah dengan kenyamanan modern. Tempat ini menawarkan pengalaman berlibur yang menyegarkan dan berbeda di kawasan wisata Guci. <map data-id=19 />"
@@ -661,7 +883,15 @@
                         "cafe cod?",
                         "cod guci",
                         "cafe guci",
-                        "kafe"
+                        "Harga kopi di COD?",
+                        "Fasilitas di COD mana?",
+                        "Wi-Fi di kafe ada?",
+                        "Menu di COD apa?",
+                        "Tempat duduk outdoor?",
+                        "Kafe buka kapan?",
+                        "Lokasi COD di mana?",
+                        "Makanan berat di COD?"
+                                          
                   ],
                   "responses": [
                         "Kafe COD (Coffee on Demand) Guci adalah salah satu tempat nongkrong populer di kawasan wisata Guci, Kabupaten Tegal, Jawa Tengah. Kafe ini dikenal dengan suasana yang nyaman dan modern, serta berbagai pilihan kopi dan minuman lainnya yang bisa dinikmati sambil bersantai di tengah keindahan alam pegunungan.Fasilitas dan daya tarik Kafe COD Guci:Menu kopi dan minuman: Menyediakan berbagai pilihan kopi, mulai dari kopi lokal hingga varian internasional, serta minuman non-kopi seperti teh dan smoothie.Makanan ringan dan makanan berat: Selain kopi, Kafe COD juga menawarkan berbagai jenis makanan ringan, kue-kue, dan makanan berat seperti sandwich, pasta, atau hidangan lokal yang bisa dinikmati di tempat.Desain interior yang stylish: Kafe ini memiliki desain interior yang modern dan nyaman, dengan banyak tempat duduk yang cozy dan area yang instagramable.Pemandangan alam: Beberapa area di kafe menawarkan pemandangan alam pegunungan yang indah, sehingga pengunjung bisa menikmati keindahan sekitar sambil bersantai.Wi-Fi dan tempat kerja: Tersedia Wi-Fi gratis, menjadikannya tempat yang ideal bagi para digital nomad atau wisatawan yang ingin bekerja sambil menikmati suasana.Area outdoor: Kafe ini juga menyediakan area outdoor untuk pengunjung yang ingin menikmati udara segar dan pemandangan alam.Harga menu di Kafe COD Guci umumnya: Kopi: Mulai dari Rp 20.000 s/d Rp 40.000, tergantung jenis dan ukuran.Makanan ringan: Sekitar Rp 15.000 s/d Rp 35.000.Makanan berat: Sekitar Rp 30.000 s/d Rp 60.000.Kafe COD Guci adalah pilihan yang tepat bagi mereka yang ingin menikmati kopi berkualitas dalam suasana yang nyaman sambil menikmati pemandangan alam pegunungan. <map data-id=20 />"
@@ -684,7 +914,15 @@
                   "text": [
                         "hotel sabda alam?",
                         "penginapan sabda alam",
-                        "sabda alam"
+                        "sabda alam",
+                        "Harga tiket Sabda Alam?",
+                        "Fasilitas di Sabda Alam?",
+                        "Kolam renang ada?",
+                        "Aktivitas di Sabda Alam?",
+                        "Lokasi Sabda Alam mana?",
+                        "Tiket keluarga berapa?",
+                        "Spot foto di Sabda?"
+                                              
                   ],
                   "responses": [
                         "Sabda Alam adalah salah satu destinasi wisata dan rekreasi yang terletak di kawasan Guci, Kabupaten Tegal, Jawa Tengah. Tempat ini terkenal dengan berbagai fasilitas yang cocok untuk keluarga dan kelompok, serta suasana alam yang segar dan menyegarkan. Sabda Alam menawarkan berbagai aktivitas yang menyenangkan dan fasilitas yang lengkap untuk pengunjung.Fasilitas dan daya tarik Sabda Alam Guci:Kolam Renang: Sabda Alam memiliki kolam renang air panas yang berasal dari sumber mata air panas alami di Guci. Kolam renang ini cocok untuk relaksasi dan berenang sambil menikmati pemandangan sekitar.Taman dan Area Bermain: Terdapat area taman yang luas dengan berbagai wahana bermain untuk anak-anak dan keluarga, seperti ayunan, perosotan, dan area piknik.Penginapan: Menyediakan berbagai jenis penginapan, termasuk kamar hotel dan villa, dengan fasilitas yang nyaman dan pemandangan alam yang indah.Restaurant dan Kafe: Sabda Alam memiliki restoran dan kafe yang menyajikan berbagai hidangan lokal dan internasional, cocok untuk bersantap sambil menikmati suasana.Wahana Rekreasi: Beberapa wahana rekreasi seperti waterpark, taman bermain, dan fasilitas outdoor lainnya untuk aktivitas keluarga dan kelompok.Spot Foto: Terdapat berbagai spot foto menarik dengan latar belakang alam pegunungan dan taman yang cantik. Biaya masuk ke Sabda Alam Guci biasanya bervariasi: Hari biasa: Sekitar Rp 20.000 s/d Rp 30.000 per orang.Akhir pekan atau hari libur: Sekitar Rp 30.000 s/d Rp 40.000 per orang.Biaya menginap di penginapan Sabda Alam dapat bervariasi tergantung jenis akomodasi yang dipilih, mulai dari Rp 500.000 hingga Rp 1.500.000 per malam, tergantung fasilitas dan tipe kamar. <map data-id=21 />"
@@ -707,7 +945,15 @@
                   "text": [
                         "hotel guci kencana?",
                         "penginapan guci kencana",
-                        "guci kencana"
+                        "guci kencana",
+                        "Harga kamar Kencana?",
+                        "Fasilitas di Kencana?",
+                        "Kolam renang ada?",
+                        "Lokasi Kencana di mana?",
+                        "Sarapan di Kencana ada?",
+                        "Harga villa berapa?",
+                        "Kamar termurah di Kencana?"
+                        
                   ],
                   "responses": [
                         "Guci Kencana Hotel adalah salah satu hotel yang terletak di kawasan wisata Guci, Kabupaten Tegal, Jawa Tengah. Hotel ini menawarkan akomodasi yang nyaman dan fasilitas yang lengkap untuk para tamu yang ingin menikmati liburan di daerah pegunungan Guci.Fasilitas dan daya tarik Guci Kencana Hotel:Kamar Akomodasi: Menyediakan berbagai jenis kamar dengan fasilitas yang nyaman, termasuk kasur yang empuk, kamar mandi dalam, TV, dan akses Wi-Fi. Kamar-kamarnya didesain untuk memberikan kenyamanan maksimal bagi tamu. Restoran: Terdapat restoran yang menyajikan berbagai hidangan, mulai dari makanan lokal hingga internasional, sehingga tamu dapat menikmati santapan yang lezat selama menginap.Kolam Renang: Hotel ini biasanya dilengkapi dengan kolam renang, baik untuk dewasa maupun anak-anak, yang dapat dinikmati oleh tamu.Fasilitas Pertemuan: Menyediakan ruang pertemuan atau konferensi untuk keperluan bisnis atau acara kelompok, dengan fasilitas yang memadai.Area Bersantai: Terdapat area bersantai yang nyaman di sekitar hotel, baik di dalam maupun di luar ruangan, untuk menikmati udara segar dan pemandangan alam.Layanan Tambahan: Layanan tambahan seperti layanan kamar, laundry, dan resepsionis 24 jam biasanya tersedia untuk kenyamanan tamu.Biaya menginap di Guci Kencana Hotel bervariasi tergantung jenis kamar dan waktu pemesanan:Kamar Standar: Mulai dari Rp 400.000 hingga Rp 600.000 per malam. Kamar Suite atau Villa: Bisa mencapai Rp 800.000 hingga Rp 1.500.000 per malam, tergantung fasilitas dan ukuran kamar. <map data-id=22 />"
@@ -730,7 +976,15 @@
                   "text": [
                         "hotel rawamba?",
                         "penginapan rawamba?",
-                        "rawamba"
+                        "rawamba",
+                        "Harga kamar Rawamba?",
+                        "Fasilitas di Rawamba apa?",
+                        "Kolam renang ada?",
+                        "Lokasi Rawamba di mana?",
+                        "Tiket masuk Rawamba?",
+                        "Spot foto di Rawamba?",
+                        "Harga tiket keluarga?"
+                        
                   ],
                   "responses": [
                         "Rawamba Guci adalah destinasi wisata yang terletak di kawasan Guci, Kabupaten Tegal, Jawa Tengah. Tempat ini dikenal dengan suasana alamnya yang asri dan suasana yang menenangkan, cocok untuk pengunjung yang ingin menikmati keindahan alam sambil beristirahat atau berlibur.Fasilitas dan daya tarik Rawamba Guci:Penginapan: Menyediakan berbagai jenis akomodasi, termasuk villa atau kamar yang nyaman dengan desain yang sederhana dan fungsional, cocok untuk keluarga atau kelompok.Pemandian Air Panas: Rawamba Guci sering kali menawarkan fasilitas pemandian air panas, yang dapat digunakan untuk relaksasi dan menikmati manfaat kesehatan dari air panas alami.Area Bersantai: Tersedia area bersantai dengan pemandangan alam yang indah, di mana pengunjung bisa menikmati suasana tenang di sekitar kawasan Guci.Taman dan Area Outdoor: Area ini dilengkapi dengan taman atau ruang terbuka yang ideal untuk piknik, berjalan-jalan, atau hanya bersantai menikmati udara segar.Spot Foto: Dengan latar belakang alam yang indah, Rawamba Guci memiliki berbagai spot foto menarik untuk diabadikan.Biaya masuk dan biaya menginap di Rawamba Guci umumnya:Biaya Masuk: Sekitar Rp 10.000 s/d Rp 20.000 per orang.Biaya Menginap: Bervariasi tergantung pada jenis akomodasi yang dipilih, mulai dari Rp 300.000 hingga Rp 700.000 per malam, tergantung pada fasilitas dan tipe kamar. <map data-id=23 />"
@@ -753,7 +1007,16 @@
                   "text": [
                         "hotel grand mega guci?",
                         "grand mega guci",
-                        "grand mega"
+                        "grand mega",
+                        "Harga kamar Grand Mega?",
+                        "Fasilitas di Grand Mega?",
+                        "Kolam renang ada?",
+                        "Lokasi Grand Mega mana?",
+                        "Kamar suite di Mega?",
+                        "Harga villa berapa?",
+                        "Sarapan di Grand Mega?",
+                        "Hotel grand mega bintang berapa?"
+                        
                   ],
                   "responses": [
                         "Grand Mega Guci adalah salah satu hotel dan resort yang terletak di kawasan wisata Guci, Kabupaten Tegal, Jawa Tengah. Tempat ini menawarkan akomodasi yang nyaman dengan berbagai fasilitas untuk memenuhi kebutuhan para tamu yang ingin berlibur di daerah pegunungan Guci.Fasilitas dan daya tarik Grand Mega Guci:Kamar Akomodasi: Menyediakan berbagai jenis kamar yang nyaman dan modern, dilengkapi dengan fasilitas seperti TV, Wi-Fi, minibar, dan kamar mandi dalam.Restoran: Hotel ini biasanya memiliki restoran yang menyajikan berbagai hidangan lokal dan internasional, memungkinkan tamu untuk menikmati makanan lezat tanpa perlu pergi jauh.Kolam Renang: Grand Mega Guci dilengkapi dengan kolam renang yang dapat digunakan oleh tamu untuk bersantai dan berenang.Fasilitas Pertemuan: Menyediakan ruang pertemuan atau konferensi untuk keperluan bisnis, dengan fasilitas modern untuk mendukung acara bisnis atau kelompok.Area Bersantai dan Taman: Terdapat area bersantai dengan taman yang luas, memungkinkan tamu untuk menikmati udara segar dan pemandangan alam sekitar.Layanan Tambahan: Layanan kamar, laundry, dan resepsionis 24 jam biasanya tersedia untuk kenyamanan tamu.Biaya menginap di Grand Mega Guci bervariasi tergantung pada jenis kamar dan waktu pemesanan: Kamar Standar: Mulai dari Rp 400.000 hingga Rp 700.000 per malam.Kamar Suite atau Villa: Bisa mencapai Rp 800.000 hingga Rp 1.500.000 per malam, tergantung pada fasilitas dan ukuran kamar. <map data-id=24 />"
@@ -778,7 +1041,14 @@
                         "pemandian onsen?",
                         "penginapan onsen guci",
                         "onsen guci",
-                        "fyp"
+                        "Harga pemandian Onsen?",
+                        "Fasilitas di Onsen ada?",
+                        "Lokasi Onsen di mana?",
+                        "Spa di Onsen ada?",
+                        "Harga villa di Onsen?",
+                        "Tempat istirahat Onsen?",
+                        "Pemandian air panas ada?"
+                        
                   ],
                   "responses": [
                         "The Onsen Guci adalah destinasi wisata dan penginapan yang mengusung konsep pemandian air panas atau onsen yang terletak di kawasan Guci, Kabupaten Tegal, Jawa Tengah. Tempat ini menawarkan pengalaman relaksasi dengan pemandian air panas alami yang berasal dari sumber mata air panas di pegunungan.Fasilitas dan daya tarik The Onsen Guci:Pemandian Air Panas: The Onsen Guci dikenal dengan fasilitas pemandian air panasnya, yang dirancang untuk memberikan relaksasi dan manfaat kesehatan bagi pengunjung. Tersedia berbagai jenis kolam, baik untuk individu maupun kelompok.Penginapan: Menyediakan berbagai jenis akomodasi yang nyaman dengan fasilitas modern. Penginapan ini sering kali terinspirasi dari desain tradisional Jepang, menggabungkan elemen alami dengan kenyamanan.Restoran: Terdapat restoran yang menyajikan berbagai hidangan lokal dan internasional, memungkinkan tamu untuk menikmati makanan lezat selama menginap.Area Bersantai: Dengan pemandangan alam yang indah, The Onsen Guci menyediakan area bersantai yang nyaman, di mana pengunjung bisa menikmati udara segar dan keindahan pegunungan sekitar.Spa dan Layanan Relaksasi: Selain pemandian air panas, tempat ini mungkin juga menawarkan layanan spa dan relaksasi lainnya, seperti pijat dan perawatan tubuh.Biaya masuk dan biaya menginap di The Onsen Guci umumnya: Biaya Masuk Pemandian Air Panas: Sekitar Rp 30.000 s/d Rp 50.000 per orang, tergantung pada fasilitas yang digunakan.Biaya Menginap: Bervariasi tergantung jenis kamar dan fasilitas yang dipilih, mulai dari Rp 500.000 hingga Rp 1.200.000 per malam. <map data-id=25 />"
@@ -802,7 +1072,15 @@
                         "hotel gulala azana?",
                         "cafe gulala ?",
                         "gulala guci",
-                        "gulala"
+                        "gulala",
+                        "Harga kamar di Gulala?",
+                        "Fasilitas di Gulala apa?",
+                        "Tempat makan di Gulala?",
+                        "Lokasi Gulala di mana?",
+                        "Tiket masuk Gulala?",
+                        "Harga villa di Gulala?",
+                        "Kolam renang di gulala?"
+                        
                   ],
                   "responses": [
                         "Gulala Azana Guci adalah destinasi wisata yang terletak di kawasan Guci, Kabupaten Tegal, Jawa Tengah. Tempat ini dikenal dengan suasana alamnya yang asri dan berbagai fasilitas yang ditawarkan untuk kenyamanan pengunjung. Gulala Azana Guci sering menjadi pilihan bagi wisatawan yang mencari tempat yang tenang dan nyaman untuk berlibur.Fasilitas dan daya tarik Gulala Azana Guci, Penginapan: Menawarkan berbagai jenis akomodasi, termasuk villa dan kamar yang dirancang untuk memberikan kenyamanan. Kamar-kamar biasanya dilengkapi dengan fasilitas modern untuk memenuhi kebutuhan tamu.Restoran atau Kafe: Terdapat restoran atau kafe di area Gulala Azana yang menyajikan berbagai hidangan, mulai dari makanan lokal hingga internasional, memungkinkan pengunjung untuk menikmati makanan sambil menikmati suasana.Pemandangan Alam: Dengan lokasi di kawasan pegunungan, Gulala Azana menawarkan pemandangan alam yang indah, termasuk pemandangan gunung dan hutan yang hijau.Area Bersantai: Dikenal dengan area bersantai yang nyaman, cocok untuk bersantai dan menikmati udara segar. Area ini sering kali dikelilingi oleh taman atau ruang terbuka yang luas.Fasilitas Rekreasi: Mungkin menyediakan fasilitas rekreasi seperti area bermain anak-anak, kolam renang, atau jalur trekking untuk pengunjung yang ingin menjelajahi area sekitar.Biaya menginap di Gulala Azana Guci biasanya bervariasi tergantung jenis akomodasi dan fasilitas yang dipilih: Kamar Standar: Mulai dari Rp 400.000 hingga Rp 700.000 per malam.Villa atau Suite: Bisa mencapai Rp 800.000 hingga Rp 1.500.000 per malam, tergantung pada fasilitas dan ukuran kamar. <map data-id=26 />"
@@ -825,7 +1103,15 @@
                   "text": [
                         "hotel gran dian?",
                         "gran dian guci?",
-                        "grand dian"
+                        "grand dian",
+                        "Harga kamar Grand Dian?",
+                        "Fasilitas di Grand Dian?",
+                        "Lokasi Grand Dian mana?",
+                        "Kolam renang ada?",
+                        "Tiket masuk Dian?",
+                        "Kamar suite berapa?",
+                        "Harga sarapan Dian?"
+                        
                   ],
                   "responses": [
                         "Grand Dian Hotel adalah salah satu akomodasi di kawasan Guci, Kabupaten Tegal, Jawa Tengah, yang menawarkan berbagai fasilitas dan layanan untuk para tamu. Hotel ini dikenal dengan kenyamanan yang ditawarkannya serta lokasi yang strategis dekat dengan berbagai objek wisata di Guci.Fasilitas dan daya tarik Grand Dian Hotel,Kamar Akomodasi: Menyediakan berbagai jenis kamar dengan fasilitas yang nyaman, seperti tempat tidur yang nyaman, TV, Wi-Fi, dan kamar mandi dalam. Kamar-kamar ini dirancang untuk memberikan kenyamanan maksimal selama menginap.Restoran: Biasanya terdapat restoran di hotel yang menyajikan berbagai hidangan lokal dan internasional, sehingga tamu dapat menikmati makanan lezat tanpa harus meninggalkan hotel.Kolam Renang: Grand Dian Hotel sering kali dilengkapi dengan kolam renang yang dapat digunakan oleh tamu untuk bersantai dan berenang. Fasilitas Pertemuan: Menyediakan ruang pertemuan atau konferensi yang dilengkapi dengan peralatan modern untuk keperluan bisnis atau acara kelompok. Area Bersantai: Hotel ini biasanya memiliki area bersantai yang nyaman di sekitar kolam renang atau taman, ideal untuk bersantai dan menikmati udara segar.Layanan Tambahan: Layanan kamar, laundry, dan resepsionis 24 jam biasanya tersedia untuk kenyamanan tamu.Biaya menginap di Grand Dian Hotel bervariasi tergantung pada jenis kamar dan waktu pemesanan: Kamar Standar: Mulai dari Rp 300.000 hingga Rp 600.000 per malam.Kamar Suite atau Villa: Bisa mencapai Rp 700.000 hingga Rp 1.200.000 per malam, tergantung pada fasilitas dan ukuran kamar. <map data-id=27 />"
