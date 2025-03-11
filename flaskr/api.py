@@ -14,6 +14,8 @@ import string
 import pandas as pd
 
 api = Blueprint("api", __name__)
+with open("dataset/data.json") as guci_dataset:
+  dataset = json.load(guci_dataset)
 
 
 @api.route("/login", methods=["POST"])
@@ -64,6 +66,7 @@ def chatting():
     query = req.get("query")
     print(query)
     texts = []
+
     pred_input = query
     pred_input = [letters.lower() for letters in pred_input if letters not in string.punctuation]
     pred_input = ''.join(pred_input)
@@ -72,7 +75,7 @@ def chatting():
         tokenizer = pickle.load(handle)
     pred_input = tokenizer.texts_to_sequences(texts)
     pred_input = np.array(pred_input).reshape(-1)
-    pred_input = pad_sequences([pred_input],6)
+    pred_input = pad_sequences([pred_input],8)
     m = tf.keras.models.load_model('output/guci.keras')
     output = m.predict(pred_input)
     output = output.argmax()
@@ -83,9 +86,6 @@ def chatting():
 
     response_tag = le.inverse_transform([output])[0]
 
-    with open("dataset/guci_intent.json") as guci_dataset:
-        dataset = json.load(guci_dataset)
+    responses = [item for item in dataset if item["label"] == response_tag][0]
 
-    [tags, inputs, responses] = processing_json_dataset(dataset)
-
-    return {"answer": random.choice(responses[response_tag])}, 200
+    return {"answer": responses["jawaban"]}, 200

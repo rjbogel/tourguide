@@ -61,6 +61,11 @@ const loader = function (msg) {
     </div>`;
 };
 
+$("#input-text").on("keyup", function (e) {
+  if (e.key === "Enter" || e.keyCode === 13) {
+    $(".input-button").trigger("click");
+  }
+});
 $(".input-button").on("click", function (e) {
   const text = $("#input-text").val();
   const questionEl = $(chatGuest(text));
